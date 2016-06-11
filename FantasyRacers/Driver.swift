@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  Driver.swift
 //  FantasyRacers
 //
 //  Created by Chris Home on 11/06/2016.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-let csv     = FileGrabber.getFantasyRacersCSV()
-let drivers = CSV.parse(csv)
-
-
-// Do crazy shiz to array
+struct Driver
+{
+    let name:  String
+    let races: [Race]
+}
