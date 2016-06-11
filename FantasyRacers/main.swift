@@ -14,6 +14,8 @@ func doTheThing()
     {
         let csv     = try FileGrabber.getFantasyRacersCSV()
         let drivers = try CSV.parse (csv)
+        
+        print("Drivers: \(drivers)")
     }
         
     catch FileGrabber.FileError.FileNotFound  { print("File Not Found")  }

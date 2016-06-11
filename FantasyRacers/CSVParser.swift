@@ -46,7 +46,7 @@ struct CSV
         let name      = data[0]
         var races     = [Race]()
         
-        for let index in 1.stride(to: data.count, by: 2)
+        for index in 1.stride(to: data.count, by: 2)
         {
             let points = Int(data[index])      ?? 0
             let value  = Double(data[index+1]) ?? 99
