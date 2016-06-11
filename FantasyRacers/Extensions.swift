@@ -10,8 +10,13 @@ import Foundation
 
 extension Array
 {
-    private func uniquePermutations (listA: [Element], listB: [Element], inout output: [[Element]])
+    private func uniquePermutations (listA: [Element], listB: [Element], inout output: [[Element]], maxSize: Int)
     {
+        if (maxSize > 0 && listA.count > maxSize)
+        {
+            return
+        }
+        
         output.append(listA)
         
         if (!listB.isEmpty)
@@ -21,15 +26,15 @@ extension Array
                 var newA = listA; newA.append(element)
                 var newB = listB; newB.removeRange(0...index)
                 
-                uniquePermutations(newA, listB: newB, output: &output)
+                uniquePermutations(newA, listB: newB, output: &output, maxSize: maxSize)
             }
         }
     }
     
-    func uniquePermutations() -> [[Element]]
+    func uniquePermutations(withMaxSize: Int = 0) -> [[Element]]
     {
         var output = [[Element]]()
-        uniquePermutations([], listB: self, output: &output)
+        uniquePermutations([], listB: self, output: &output, maxSize: withMaxSize)
         return output
     }
 }
