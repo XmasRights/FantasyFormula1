@@ -8,22 +8,26 @@
 
 import Foundation
 
-func doTheThing()
-{
-    do
-    {
-        let csv     = try FileGrabber.getFantasyRacersCSV()
-        let drivers = try CSV.parse (csv)
-        
-        
-        let data = Database (drivers: drivers)
-    }
-        
-    catch FileGrabber.FileError.FileNotFound  { print("File Not Found")  }
-    catch FileGrabber.FileError.FileReadError { print("File Read Error") }
-    catch CSV.CSVError.DataParseError         { print("Data Read Error") }
-    catch { print("Unknown Error") }
-    
-}
+//func doTheThing()
+//{
+//    do
+//    {
+//        let csv     = try FileGrabber.getFantasyRacersCSV()
+//        let drivers = try CSV.parse (csv)
+//        
+//        
+//        let data = Database (drivers: drivers)
+//    }
+//        
+//    catch FileGrabber.FileError.FileNotFound  { print("File Not Found")  }
+//    catch FileGrabber.FileError.FileReadError { print("File Read Error") }
+//    catch CSV.CSVError.DataParseError         { print("Data Read Error") }
+//    catch { print("Unknown Error") }
+//    
+//}
+//
+//doTheThing();
 
-doTheThing();
+
+let list = [1, 2, 3, 4, 5]
+print(list.uniquePermutations())

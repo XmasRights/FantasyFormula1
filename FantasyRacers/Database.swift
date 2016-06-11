@@ -8,6 +8,33 @@
 
 import Foundation
 
+func ==(lhs: DriverPoint, rhs: DriverPoint) -> Bool
+{
+    return lhs.driver.name == rhs.driver.name
+}
+
+func ==(lhs: DriverValue, rhs: DriverValue) -> Bool
+{
+    return lhs.driver.name == rhs.driver.name
+}
+
+struct DriverPoint: Hashable
+{
+    let driver: Driver
+    let points: Int
+    
+    var hashValue: Int { return driver.hashValue }
+}
+
+struct DriverValue: Hashable
+{
+    let driver: Driver
+    let value:  Double
+    
+    var hashValue: Int { return driver.hashValue }
+}
+
+
 struct Database
 {
     let drivers : [Driver]
@@ -17,9 +44,9 @@ struct Database
         self.drivers = drivers
     }
     
-    func getRacePoints(location: Location) -> [(Driver, Int)]
+    func getRacePoints(location: Location) -> [DriverPoint]
     {
-        var output = [(Driver, Int)]()
+        var output = [DriverPoint]()
 
         for driver in drivers
         {
@@ -29,7 +56,7 @@ struct Database
                 {
                     let points = race.points
                     
-                    output.append( (driver, points) )
+                    output.append(DriverPoint(driver: driver, points: points))
                     break;
                 }
             }
@@ -37,9 +64,9 @@ struct Database
         return output
     }
     
-    func getRaceValues(location: Location) -> [(Driver, Double)]
+    func getRaceValues(location: Location) -> [DriverValue]
     {
-        var output = [(Driver, Double)]()
+        var output = [DriverValue]()
         
         for driver in drivers
         {
@@ -49,7 +76,7 @@ struct Database
                 {
                     let value = race.value
                     
-                    output.append( (driver, value) )
+                    output.append(DriverValue(driver: driver, value: value))
                     break;
                 }
             }

@@ -8,8 +8,18 @@
 
 import Foundation
 
-struct Driver
+func ==(lhs: Driver, rhs: Driver) -> Bool
+{
+    return lhs.name == rhs.name
+}
+
+struct Driver: Hashable
 {
     let name:  String
     let races: [Race]
+    
+    var hashValue: Int
+    {
+        return self.name.hashValue
+    }
 }

@@ -13,6 +13,8 @@
 		6A0774F71D0C633E0047A59F /* CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0774F61D0C633E0047A59F /* CSVParser.swift */; };
 		6A0774FA1D0C64530047A59F /* FileGrabber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0774F91D0C64530047A59F /* FileGrabber.swift */; };
 		6A0775021D0C7EE00047A59F /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0775011D0C7EE00047A59F /* Database.swift */; };
+		6A0775041D0C83370047A59F /* Analyser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0775031D0C83370047A59F /* Analyser.swift */; };
+		6A0775061D0CAA1F0047A59F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0775051D0CAA1F0047A59F /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +38,8 @@
 		6A0774F91D0C64530047A59F /* FileGrabber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileGrabber.swift; sourceTree = "<group>"; };
 		6A0774FE1D0C6FAF0047A59F /* text.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
 		6A0775011D0C7EE00047A59F /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		6A0775031D0C83370047A59F /* Analyser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analyser.swift; sourceTree = "<group>"; };
+		6A0775051D0CAA1F0047A59F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 				6A0774F51D0C624E0047A59F /* Models */,
 				6A0774E81D0C61170047A59F /* main.swift */,
 				6A0774FE1D0C6FAF0047A59F /* text.txt */,
+				6A0775051D0CAA1F0047A59F /* Extensions.swift */,
 			);
 			path = FantasyRacers;
 			sourceTree = "<group>";
@@ -91,6 +96,7 @@
 			children = (
 				6A0774F61D0C633E0047A59F /* CSVParser.swift */,
 				6A0774F91D0C64530047A59F /* FileGrabber.swift */,
+				6A0775031D0C83370047A59F /* Analyser.swift */,
 			);
 			name = Processors;
 			sourceTree = "<group>";
@@ -155,6 +161,8 @@
 				6A0775021D0C7EE00047A59F /* Database.swift in Sources */,
 				6A0774FA1D0C64530047A59F /* FileGrabber.swift in Sources */,
 				6A0774F41D0C62440047A59F /* Race.swift in Sources */,
+				6A0775061D0CAA1F0047A59F /* Extensions.swift in Sources */,
+				6A0775041D0C83370047A59F /* Analyser.swift in Sources */,
 				6A0774F21D0C623B0047A59F /* Driver.swift in Sources */,
 				6A0774E91D0C61170047A59F /* main.swift in Sources */,
 				6A0774F71D0C633E0047A59F /* CSVParser.swift in Sources */,
