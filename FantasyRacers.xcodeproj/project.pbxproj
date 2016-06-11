@@ -33,6 +33,9 @@
 		6A0774F31D0C62440047A59F /* Race.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
 		6A0774F61D0C633E0047A59F /* CSVParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVParser.swift; sourceTree = "<group>"; };
 		6A0774F91D0C64530047A59F /* FileGrabber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileGrabber.swift; sourceTree = "<group>"; };
+		6A0774FC1D0C65DA0047A59F /* Fantasy Racers.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Fantasy Racers.csv"; sourceTree = "<group>"; };
+		6A0774FD1D0C6EE90047A59F /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		6A0774FE1D0C6FAF0047A59F /* text.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +68,11 @@
 		6A0774E71D0C61170047A59F /* FantasyRacers */ = {
 			isa = PBXGroup;
 			children = (
+				6A0774FB1D0C65B20047A59F /* Data */,
 				6A0774F81D0C643A0047A59F /* Processors */,
 				6A0774F51D0C624E0047A59F /* Models */,
 				6A0774E81D0C61170047A59F /* main.swift */,
+				6A0774FE1D0C6FAF0047A59F /* text.txt */,
 			);
 			path = FantasyRacers;
 			sourceTree = "<group>";
@@ -88,6 +93,15 @@
 				6A0774F91D0C64530047A59F /* FileGrabber.swift */,
 			);
 			name = Processors;
+			sourceTree = "<group>";
+		};
+		6A0774FB1D0C65B20047A59F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6A0774FC1D0C65DA0047A59F /* Fantasy Racers.csv */,
+				6A0774FD1D0C6EE90047A59F /* test.txt */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

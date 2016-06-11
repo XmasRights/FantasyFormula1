@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Location
+enum Location: Int
 {
     case Australia, Bahrain, China, Russia, Spain, Monaco, Canada, Europe, Austria
     case Britain, Hungary, Germany, Belgium, Italy, Singapore, Malaysia, Japan
@@ -18,6 +18,6 @@ enum Location
 struct Race
 {
     let location: Location
-    let Points:   Int
-    let Value:    Int
+    let points:   Int
+    let value:    Double
 }

@@ -10,10 +10,24 @@ import Foundation
 
 struct FileGrabber
 {
-    static func getFantasyRacersCSV() -> String
+    enum FileError: ErrorType
     {
-        // ToDo
-        print("TODO: Get File")
-        return String()
+        case FileNotFound
+        case FileReadError
+    }
+    
+    static func getFantasyRacersCSV() throws -> String
+    {
+        let path = NSHomeDirectory().stringByAppendingString("/Desktop/Fantasy Racers.csv")
+        
+        do
+        {
+            let contents = try String(contentsOfFile: path, encoding: NSUTF8StringEncoding)
+            return contents
+        }
+        catch _ as NSError
+        {
+            throw FileError.FileReadError
+        }
     }
 }

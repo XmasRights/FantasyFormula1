@@ -8,8 +8,21 @@
 
 import Foundation
 
-let csv     = FileGrabber.getFantasyRacersCSV()
-let drivers = CSV.parse(csv)
+func doTheThing()
+{
+    do
+    {
+        let csv     = try FileGrabber.getFantasyRacersCSV()
+        let drivers = try CSV.parse (csv)
+        
+        print("Drivers: \(drivers)")
+    }
+        
+    catch FileGrabber.FileError.FileNotFound  { print("File Not Found")  }
+    catch FileGrabber.FileError.FileReadError { print("File Read Error") }
+    catch CSV.CSVError.DataParseError         { print("Data Read Error") }
+    catch { print("Unknown Error") }
+    
+}
 
-
-// Do crazy shiz to array
+doTheThing();
