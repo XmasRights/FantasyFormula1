@@ -45,9 +45,8 @@ struct Database
     
     func getTopTeams(location: Location, top: Int = 5, teamSize: Int = 3) -> [[Driver]]
     {
-        var teams = drivers.uniquePermutations(teamSize)
-        teams.sortInPlace({ Database.getTotalPoints($0, location: location) >  Database.getTotalPoints($1, location: location) })
-        let topTeams = teams[0..<top]
-        return Array(topTeams)
+        let teams = drivers.uniquePermutations(teamSize)
+        let sorted = teams.sort({ Database.getTotalPoints($0, location: location) >  Database.getTotalPoints($1, location: location) })
+        return Array(sorted.prefixUpTo(top))
     }
 }

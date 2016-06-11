@@ -17,11 +17,11 @@ func doTheThing()
         
         let data = Database(drivers: drivers)
         
-        let top = data.getTopTeams(.Monaco, top: 10, teamSize: 3)
-        
+        let top = data.getTopTeams(.Monaco, top: 5, teamSize: 5)
+
         for team in top
         {
-            let points = Database.getTotalPoints(team, location: .Australia)
+            let points = Database.getTotalPoints(team, location: .Monaco)
             print("\(team) = \(points)")
         }
     }
