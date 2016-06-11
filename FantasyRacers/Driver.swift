@@ -13,8 +13,40 @@ func ==(lhs: Driver, rhs: Driver) -> Bool
     return lhs.name == rhs.name
 }
 
-struct Driver
+struct Driver: CustomStringConvertible
 {
     let name:  String
     let races: [Race]
+    
+    var description: String { return name }
+    
+    func getRaceResult(location: Location) -> Race?
+    {
+        for race in races
+        {
+            if race.location == location
+            {
+                return race
+            }
+        }
+        return nil
+    }
+    
+    func getValue (location: Location) -> Double?
+    {
+        if let race = getRaceResult(location)
+        {
+            return race.value
+        }
+        return nil
+    }
+    
+    func getPoints (location: Location) -> Int?
+    {
+        if let race = getRaceResult(location)
+        {
+            return race.points
+        }
+        return nil
+    }
 }
