@@ -41,21 +41,18 @@ struct CSV
     
     private static func getDriver(fileContents: String) throws -> Driver
     {
-        let data  = fileContents.componentsSeparatedByString(",")
-        
-        let count     = data.count
+        let data      = fileContents.componentsSeparatedByString(",")
         var raceIndex = 0
+        let name      = data[0]
+        var races     = [Race]()
         
-        let name = data[0]
-        var races = [Race]()
-        
-        for var index in 1..<count
+        for let index in 1.stride(to: data.count, by: 2)
         {
-            guard let points = Int(data[index++])                else { throw CSVError.DataParseError }
-            guard let value  = Double(data[index++])             else { throw CSVError.DataParseError }
-            guard let location = Location(rawValue: raceIndex++) else { throw CSVError.DataParseError }
+            let points = Int(data[index])      ?? 0
+            let value  = Double(data[index+1]) ?? 99
             
-            
+            guard let location = Location(rawValue: raceIndex++) else { print("LOCATION");throw CSVError.DataParseError }
+  
             let race = Race (location:location, points:points, value:value)
             races.append(race)
         }
