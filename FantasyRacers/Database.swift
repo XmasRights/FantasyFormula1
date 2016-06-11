@@ -18,20 +18,16 @@ func ==(lhs: DriverValue, rhs: DriverValue) -> Bool
     return lhs.driver.name == rhs.driver.name
 }
 
-struct DriverPoint: Hashable
+struct DriverPoint
 {
     let driver: Driver
     let points: Int
-    
-    var hashValue: Int { return driver.hashValue }
 }
 
-struct DriverValue: Hashable
+struct DriverValue
 {
     let driver: Driver
     let value:  Double
-    
-    var hashValue: Int { return driver.hashValue }
 }
 
 
