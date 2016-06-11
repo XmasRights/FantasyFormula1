@@ -15,8 +15,15 @@ func doTheThing()
         let csv     = try FileGrabber.getFantasyRacersCSV()
         let drivers = try CSV.parse (csv)
         
-        
         let data = Database(drivers: drivers)
+        
+        let top = data.getTopTeams(.Monaco, top: 10, teamSize: 3)
+        
+        for team in top
+        {
+            let points = Database.getTotalPoints(team, location: .Australia)
+            print("\(team) = \(points)")
+        }
     }
         
     catch FileGrabber.FileError.FileNotFound  { print("File Not Found")  }
