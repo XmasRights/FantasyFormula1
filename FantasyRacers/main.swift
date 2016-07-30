@@ -17,18 +17,18 @@ func doTheThing()
         
         let data = Database(drivers: drivers)
         
-        let top = data.getTopTeams(.Monaco, top: 5, teamSize: 5)
+        let top = data.getTopTeams(.monaco, top: 5, teamSize: 5)
 
         for team in top
         {
-            let points = Database.getTotalPoints(team, location: .Monaco)
+            let points = Database.getTotalPoints(team, location: .monaco)
             print("\(team) = \(points)")
         }
     }
         
-    catch FileGrabber.FileError.FileNotFound  { print("File Not Found")  }
-    catch FileGrabber.FileError.FileReadError { print("File Read Error") }
-    catch CSV.CSVError.DataParseError         { print("Data Read Error") }
+    catch FileGrabber.FileError.fileNotFound  { print("File Not Found")  }
+    catch FileGrabber.FileError.fileReadError { print("File Read Error") }
+    catch CSV.CSVError.dataParseError         { print("Data Read Error") }
     catch { print("Unknown Error") }
     
 }

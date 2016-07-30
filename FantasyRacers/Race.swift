@@ -10,9 +10,9 @@ import Foundation
 
 enum Location: Int
 {
-    case Australia, Bahrain, China, Russia, Spain, Monaco, Canada, Europe, Austria
-    case Britain, Hungary, Germany, Belgium, Italy, Singapore, Malaysia, Japan
-    case USA, Mexico, Brazil, AbuDhabi
+    case australia, bahrain, china, russia, spain, monaco, canada, europe, austria
+    case britain, hungary, germany, belgium, italy, singapore, malaysia, japan
+    case usa, mexico, brazil, abuDhabi
 }
 
 struct Race

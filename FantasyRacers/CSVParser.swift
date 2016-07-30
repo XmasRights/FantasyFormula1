@@ -10,14 +10,14 @@ import Foundation
 
 struct CSV
 {
-    enum CSVError: ErrorType
+    enum CSVError: ErrorProtocol
     {
-        case DataParseError
+        case dataParseError
     }
     
-    static func parse(fileContents: String) throws -> [Driver]
+    static func parse(_ fileContents: String) throws -> [Driver]
     {
-        let lines = fileContents.componentsSeparatedByString("\n")
+        let lines = fileContents.components(separatedBy: "\n")
         let count = lines.count
         var drivers = [Driver]()
         
@@ -32,26 +32,27 @@ struct CSV
             }
             catch
             {
-                throw CSVError.DataParseError
+                throw CSVError.dataParseError
             }
         }
         
         return drivers
     }
     
-    private static func getDriver(fileContents: String) throws -> Driver
+    private static func getDriver(_ fileContents: String) throws -> Driver
     {
-        let data      = fileContents.componentsSeparatedByString(",")
+        let data      = fileContents.components(separatedBy: ",")
         var raceIndex = 0
         let name      = data[0]
         var races     = [Race]()
         
-        for index in 1.stride(to: data.count, by: 2)
+        for index in stride(from: 1, to: data.count, by: 2)
         {
             let points = Int(data[index])      ?? 0
             let value  = Double(data[index+1]) ?? 99
             
-            guard let location = Location(rawValue: raceIndex++) else { print("LOCATION");throw CSVError.DataParseError }
+            guard let location = Location(rawValue: raceIndex) else { print("LOCATION");throw CSVError.dataParseError }
+            raceIndex = raceIndex + 1
   
             let race = Race (location:location, points:points, value:value)
             races.append(race)

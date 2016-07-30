@@ -17,7 +17,7 @@ struct Database
         self.drivers = drivers
     }
     
-    static func getTotalValue (drivers: [Driver], location: Location) -> Double
+    static func getTotalValue (_ drivers: [Driver], location: Location) -> Double
     {
         var total = 0.0
         for driver in drivers
@@ -30,7 +30,7 @@ struct Database
         return total
     }
     
-    static func getTotalPoints (drivers: [Driver], location: Location) -> Int
+    static func getTotalPoints (_ drivers: [Driver], location: Location) -> Int
     {
         var total = 0
         for driver in drivers
@@ -43,10 +43,10 @@ struct Database
         return total
     }
     
-    func getTopTeams(location: Location, top: Int = 5, teamSize: Int = 3) -> [[Driver]]
+    func getTopTeams(_ location: Location, top: Int = 5, teamSize: Int = 3) -> [[Driver]]
     {
         let teams = drivers.uniquePermutations(teamSize)
-        let sorted = teams.sort({ Database.getTotalPoints($0, location: location) >  Database.getTotalPoints($1, location: location) })
-        return Array(sorted.prefixUpTo(top))
+        let sorted = teams.sorted(isOrderedBefore: { Database.getTotalPoints($0, location: location) >  Database.getTotalPoints($1, location: location) })
+        return Array(sorted.prefix(upTo: top))
     }
 }

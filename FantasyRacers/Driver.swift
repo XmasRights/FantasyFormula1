@@ -20,7 +20,7 @@ struct Driver: CustomStringConvertible
     
     var description: String { return name }
     
-    func getRaceResult(location: Location) -> Race?
+    func getRaceResult(_ location: Location) -> Race?
     {
         for race in races
         {
@@ -32,7 +32,7 @@ struct Driver: CustomStringConvertible
         return nil
     }
     
-    func getValue (location: Location) -> Double?
+    func getValue (_ location: Location) -> Double?
     {
         if let race = getRaceResult(location)
         {
@@ -41,7 +41,7 @@ struct Driver: CustomStringConvertible
         return nil
     }
     
-    func getPoints (location: Location) -> Int?
+    func getPoints (_ location: Location) -> Int?
     {
         if let race = getRaceResult(location)
         {
