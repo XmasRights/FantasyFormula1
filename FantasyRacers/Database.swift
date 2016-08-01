@@ -43,10 +43,13 @@ struct Database
         return total
     }
     
-    func getTopTeams(_ location: Location, top: Int = 5, teamSize: Int = 3) -> [[Driver]]
+    func getTopTeams(_ location: Location, top: Int = 5, teamValue: Double = 0.0, teamSize: Int = 3) -> [[Driver]]
     {
-        let teams = drivers.uniquePermutations(teamSize)
+        let teams = drivers.uniquePermutations(teamValue, withMaxSize: teamSize)
+        
         let sorted = teams.sorted(isOrderedBefore: { Database.getTotalPoints($0, location: location) >  Database.getTotalPoints($1, location: location) })
+        
+        
         return Array(sorted.prefix(upTo: top))
     }
 }

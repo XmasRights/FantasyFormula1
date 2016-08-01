@@ -17,12 +17,13 @@ func doTheThing()
         
         let data = Database(drivers: drivers)
         
-        let top = data.getTopTeams(.monaco, top: 5, teamSize: 5)
-
+        let top = data.getTopTeams(.monaco, top: 3, teamValue: 50.0, teamSize: 4)
+        
         for team in top
         {
             let points = Database.getTotalPoints(team, location: .monaco)
-            print("\(team) = \(points)")
+            let value  = Database.getTotalValue (team, location: .monaco)
+            print("\(team) = \(points) = \(value)")
         }
     }
         
@@ -32,5 +33,7 @@ func doTheThing()
     catch { print("Unknown Error") }
     
 }
+
+print("Running")
 
 doTheThing();
