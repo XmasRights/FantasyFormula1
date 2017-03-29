@@ -33,14 +33,15 @@ struct Formatters
         {
             guard let driverJson = entry["driver"] as AnyObject? else { continue }
 
-            guard let name     = driverJson["name"]     as? String,
-                let priceStr = driverJson["price"]    as? String,
-                let teamStr  = driverJson["team"]     as? String,
-                let teammate = driverJson["teammate"] as? String else { continue }
+            guard let nameStr     = driverJson["name"]     as? String,
+                  let priceStr    = driverJson["price"]    as? String,
+                  let teamStr     = driverJson["team"]     as? String,
+                  let teammateStr = driverJson["teammate"] as? String else { continue }
 
-            guard let price = Int(priceStr),
-                let team  = Team(rawValue: teamStr) else { continue }
-
+            guard let name     = DriverName(rawValue: nameStr),
+                  let price    = Int(priceStr),
+                  let team     = Team(rawValue: teamStr),
+                  let teammate = DriverName(rawValue: teammateStr) else { continue }
 
             let driver = Driver(name: name,
                                 price: price,
@@ -48,6 +49,36 @@ struct Formatters
                                 teammate: teammate)
 
             output.append(driver)
+        }
+        return output
+    }
+
+    static func raceResultFormatter (jsonArray: AnyObject) -> [RaceResult]
+    {
+        var output = [RaceResult]()
+
+        for entry in jsonArray as! [AnyObject]
+        {
+            guard let locationStr = entry["location"] as? String,
+                  let results     = entry["results"]  as? [AnyObject]  else { continue }
+
+            for result in results
+            {
+                guard let driverStr = result ["driver"]     as? String,
+                      let qualiStr  = result ["qualifying"] as? String,
+                      let raceStr   = result ["race"]       as? String else { continue }
+
+                guard let driver   = DriverName(rawValue: driverStr),
+                      let location = Location(rawValue: locationStr),
+                      let qualiUNF = Int (qualiStr),
+                      let raceUNF  = Int (raceStr)                     else { continue }
+
+                let quali    = Position(value: qualiUNF);
+                let race     = Position(value: raceUNF);
+
+                let raceResult = RaceResult(driver: driver, location:location, qulifyingPosition: quali, racePosition: race)
+                output.append(raceResult)
+            }
         }
         return output
     }

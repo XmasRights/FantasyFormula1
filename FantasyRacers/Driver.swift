@@ -8,6 +8,30 @@
 
 import Foundation
 
+enum DriverName: String
+{
+    case Hamilton
+    case Vettel
+    case Bottas
+    case Ricciardo
+    case Verstappen
+    case Raikkonen
+    case Massa
+    case Stroll
+    case Ocon
+    case Perez
+    case Grosjean
+    case Magnussen
+    case Palmer
+    case Hulkenberg
+    case Alonso
+    case Vandoorne
+    case Ericsson
+    case Wehrlein
+    case Sainz
+    case Kyvat
+}
+
 enum Team: String
 {
     case Mercedes, RedBull, Ferrari, ForceIndia, Renault, McLaren
@@ -16,20 +40,15 @@ enum Team: String
 
 struct Driver
 {
-    let name:     String
+    let name:     DriverName
     let price:    Int
     let team:     Team
-    let teammate: String
+    let teammate: DriverName
 }
 
-struct RaceResult
+struct DriverResult
 {
+    let driver: DriverName
     let qualifyingPosition: Int
     let racePosition: Int
-}
-
-struct Classification
-{
-    let driver: Driver
-    let result: RaceResult
 }

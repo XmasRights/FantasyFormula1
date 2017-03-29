@@ -15,8 +15,23 @@ enum Location: String
     case USA, Mexico, Brazil, AbuDhabi
 }
 
-struct Race
+enum Position
 {
-    let location: Location
-    let result:   [Classification]
+    case Finished(position: Int)
+    case DNF
+
+    init(value: Int)
+    {
+        if value <= 0 { self = .DNF }
+        else          { self = .Finished(position: value) }
+    }
 }
+
+struct RaceResult
+{
+    let driver: DriverName
+    let location: Location
+    let qulifyingPosition: Position
+    let racePosition: Position
+}
+
