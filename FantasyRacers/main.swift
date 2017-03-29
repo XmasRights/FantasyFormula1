@@ -8,32 +8,23 @@
 
 import Foundation
 
-func doTheThing()
+func getFileFromCommandLine() -> String
 {
-    do
-    {
-        let csv     = try FileGrabber.getFantasyRacersCSV()
-        let drivers = try CSV.parse (csv)
-        
-        let data = Database(drivers: drivers)
-        
-        let top = data.getTopTeams(.monaco, top: 3, teamValue: 50.0, teamSize: 4)
-        
-        for team in top
-        {
-            let points = Database.getTotalPoints(team, location: .monaco)
-            let value  = Database.getTotalValue (team, location: .monaco)
-            print("\(team) = \(points) = \(value)")
-        }
-    }
-        
-    catch FileGrabber.FileError.fileNotFound  { print("File Not Found")  }
-    catch FileGrabber.FileError.fileReadError { print("File Read Error") }
-    catch CSV.CSVError.dataParseError         { print("Data Read Error") }
-    catch { print("Unknown Error") }
-    
+    assert(CommandLine.arguments.count >= 2, "Incorrect number of command line arguments")
+
+    let filenameWithTilde = CommandLine.arguments[1]
+    let filename = NSString(string: filenameWithTilde).expandingTildeInPath
+
+    return filename
 }
 
-print("Running")
+do
+{
+    let file     = getFileFromCommandLine()
+    let contents = try File.getContents(file: file)
+    print(contents)
+}
+catch { print ("Could not read the data file") }
 
-doTheThing();
+
+
