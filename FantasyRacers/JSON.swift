@@ -10,19 +10,22 @@ import Foundation
 
 struct JSONDecoder
 {
-    static func parseForDriverData(jsonString: String) -> [Driver]
+    static func parse<T>(jsonString: String, withFormatter formatter: (AnyObject) -> [T]) -> [T]
     {
         let data = jsonString.data(using: String.Encoding.utf8)
 
         if let json = try? JSONSerialization.jsonObject(with: data!) as AnyObject
         {
-            return driverArray(jsonArray: json)
+            return formatter (json)
         }
         print ("Could not decode JSON")
         return []
     }
+}
 
-    private static func driverArray (jsonArray: AnyObject) -> [Driver]
+struct Formatters
+{
+    static func driverDataFormatter (jsonArray: AnyObject) -> [Driver]
     {
         var output = [Driver]()
 
@@ -31,12 +34,12 @@ struct JSONDecoder
             guard let driverJson = entry["driver"] as AnyObject? else { continue }
 
             guard let name     = driverJson["name"]     as? String,
-                  let priceStr = driverJson["price"]    as? String,
-                  let teamStr  = driverJson["team"]     as? String,
-                  let teammate = driverJson["teammate"] as? String else { continue }
+                let priceStr = driverJson["price"]    as? String,
+                let teamStr  = driverJson["team"]     as? String,
+                let teammate = driverJson["teammate"] as? String else { continue }
 
             guard let price = Int(priceStr),
-                  let team  = Team(rawValue: teamStr) else { continue }
+                let team  = Team(rawValue: teamStr) else { continue }
 
 
             let driver = Driver(name: name,
@@ -49,3 +52,4 @@ struct JSONDecoder
         return output
     }
 }
+

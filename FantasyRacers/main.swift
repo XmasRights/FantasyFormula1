@@ -31,8 +31,7 @@ func getFileContents() -> String
 }
 
 let contents = getFileContents()
-let drivers  = JSONDecoder.parseForDriverData(jsonString: contents)
-
+let drivers  = JSONDecoder.parse(jsonString: contents, withFormatter: Formatters.driverDataFormatter)
 print (drivers)
 
 
