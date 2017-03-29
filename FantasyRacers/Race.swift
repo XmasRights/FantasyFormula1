@@ -18,6 +18,5 @@ enum Location: Int
 struct Race
 {
     let location: Location
-    let points:   Int
-    let value:    Double
+    let result:   [Classification]
 }

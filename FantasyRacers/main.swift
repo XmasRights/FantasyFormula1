@@ -18,13 +18,23 @@ func getFileFromCommandLine() -> String
     return filename
 }
 
-do
+func getFileContents() -> String
 {
-    let file     = getFileFromCommandLine()
-    let contents = try File.getContents(file: file)
-    print(contents)
+    do
+    {
+        let file     = getFileFromCommandLine()
+        let contents = try File.getContents(file: file)
+        return contents
+    }
+    catch { print ("Could not read the data file") }
+    return String();
 }
-catch { print ("Could not read the data file") }
+
+let contents = getFileContents()
+let drivers  = JSONDecoder.parseForDriverData(jsonString: contents)
+
+print (drivers)
+
 
 
 

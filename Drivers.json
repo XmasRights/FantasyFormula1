@@ -1,0 +1,34 @@
+[
+  {
+    "driver": {
+      "name"     : "Hamilton",
+      "price"    : "22",
+      "team"     : "Mercedes",
+      "teammate" : "Bottas"
+    }
+  },
+  {
+    "driver": {
+      "name"     : "Bottas",
+      "price"    : "18",
+      "team"     : "Mercedes",
+      "teammate" : "Hamilton"
+    }
+  },
+  {
+    "driver": {
+      "name"     : "Verstappen",
+      "price"    : "15",
+      "team"     : "RedBull",
+      "teammate" : "Ricciardo"
+    }
+  },
+  {
+    "driver": {
+      "name"     : "Ricciardo",
+      "price"    : "15",
+      "team"     : "RedBull",
+      "teammate" : "Verstappen"
+    }
+  },
+]

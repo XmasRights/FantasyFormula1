@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BAB15791E8BCF9F004B97EE /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAB15781E8BCF9F004B97EE /* JSON.swift */; };
 		6A0774E91D0C61170047A59F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0774E81D0C61170047A59F /* main.swift */; };
 		6A0774F21D0C623B0047A59F /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0774F11D0C623B0047A59F /* Driver.swift */; };
 		6A0774F41D0C62440047A59F /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0774F31D0C62440047A59F /* Race.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4BAB15781E8BCF9F004B97EE /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		6A0774E51D0C61170047A59F /* FantasyRacers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FantasyRacers; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0774E81D0C61170047A59F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6A0774F11D0C623B0047A59F /* Driver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				6A0774F91D0C64530047A59F /* File.swift */,
 				6A0774F61D0C633E0047A59F /* CSVParser.swift */,
 				6A0775031D0C83370047A59F /* Analyser.swift */,
+				4BAB15781E8BCF9F004B97EE /* JSON.swift */,
 			);
 			name = Processors;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				6A0775021D0C7EE00047A59F /* Database.swift in Sources */,
 				6A0774FA1D0C64530047A59F /* File.swift in Sources */,
 				6A0774F41D0C62440047A59F /* Race.swift in Sources */,
+				4BAB15791E8BCF9F004B97EE /* JSON.swift in Sources */,
 				6A0775061D0CAA1F0047A59F /* Extensions.swift in Sources */,
 				6A0775041D0C83370047A59F /* Analyser.swift in Sources */,
 				6A0774F21D0C623B0047A59F /* Driver.swift in Sources */,

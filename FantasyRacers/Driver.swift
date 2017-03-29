@@ -8,45 +8,28 @@
 
 import Foundation
 
-func ==(lhs: Driver, rhs: Driver) -> Bool
+enum Team: String
 {
-    return lhs.name == rhs.name
+    case Mercedes, RedBull, Ferrari, ForceIndia, Renault, McLaren
+    case Williams, Sauber, TorroRosso, Haas
 }
 
-struct Driver: CustomStringConvertible
+struct Driver
 {
-    let name:  String
-    let races: [Race]
-    
-    var description: String { return name }
-    
-    func getRaceResult(_ location: Location) -> Race?
-    {
-        for race in races
-        {
-            if race.location == location
-            {
-                return race
-            }
-        }
-        return nil
-    }
-    
-    func getValue (_ location: Location) -> Double?
-    {
-        if let race = getRaceResult(location)
-        {
-            return race.value
-        }
-        return nil
-    }
-    
-    func getPoints (_ location: Location) -> Int?
-    {
-        if let race = getRaceResult(location)
-        {
-            return race.points
-        }
-        return nil
-    }
+    let name:     String
+    let price:    Int
+    let team:     Team
+    let teammate: String
+}
+
+struct RaceResult
+{
+    let qualifyingPosition: Int
+    let racePosition: Int
+}
+
+struct Classification
+{
+    let driver: Driver
+    let result: RaceResult
 }
