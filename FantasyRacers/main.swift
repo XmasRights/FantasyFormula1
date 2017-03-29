@@ -21,7 +21,7 @@ print (drivers)
 print ("\n")
 
 let raceJSON = data.getRaceData()
-let races    = JSONDecoder.parse(jsonString: raceJSON, withFormatter: Formatters.driverDataFormatter)
+let races    = JSONDecoder.parse(jsonString: raceJSON, withFormatter: Formatters.raceResultFormatter)
 
 print ("Race Results")
 print (races)
