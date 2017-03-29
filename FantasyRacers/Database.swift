@@ -47,7 +47,7 @@ struct Database
     {
         let teams = drivers.uniquePermutations(teamValue, withMaxSize: teamSize)
         
-        let sorted = teams.sorted(isOrderedBefore: { Database.getTotalPoints($0, location: location) >  Database.getTotalPoints($1, location: location) })
+        let sorted = teams.sorted(by: { Database.getTotalPoints($0, location: location) >  Database.getTotalPoints($1, location: location) })
         
         
         return Array(sorted.prefix(upTo: top))

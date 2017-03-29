@@ -10,7 +10,7 @@ import Foundation
 
 struct FileGrabber
 {
-    enum FileError: ErrorProtocol
+    enum FileError: Error
     {
         case fileNotFound
         case fileReadError

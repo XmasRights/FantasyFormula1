@@ -10,7 +10,7 @@ import Foundation
 
 struct CSV
 {
-    enum CSVError: ErrorProtocol
+    enum CSVError: Error
     {
         case dataParseError
     }
