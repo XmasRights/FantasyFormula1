@@ -1,0 +1,107 @@
+[
+  {
+    "location": "Australia",
+    "results": [
+      {
+        "driver": "Hamilton",
+        "qualifying": "1",
+        "race": "2"
+      },
+      {
+        "driver": "Vettel",
+        "qualifying": "2",
+        "race": "1"
+      },
+      {
+        "driver": "Bottas",
+        "qualifying": "3",
+        "race": "3"
+      },
+      {
+        "driver": "Raikkonen",
+        "qualifying": "4",
+        "race": "4"
+      },
+      {
+        "driver": "Verstappen",
+        "qualifying": "5",
+        "race": "5"
+      },
+      {
+        "driver": "Grosjean",
+        "qualifying": "6",
+        "race": "0"
+      },
+      {
+        "driver": "Massa",
+        "qualifying": "7",
+        "race": "6"
+      },
+      {
+        "driver": "Sainz",
+        "qualifying": "8",
+        "race": "8"
+      },
+      {
+        "driver": "Kyvat",
+        "qualifying": "9",
+        "race": "9"
+      },
+      {
+        "driver": "Ricciardo",
+        "qualifying": "15",
+        "race": "0"
+      },
+      {
+        "driver": "Perez",
+        "qualifying": "10",
+        "race": "11"
+      },
+      {
+        "driver": "Hulkenberg",
+        "qualifying": "11",
+        "race": "11"
+      },
+      {
+        "driver": "Alonso",
+        "qualifying": "12",
+        "race": "0"
+      },
+      {
+        "driver": "Ocon",
+        "qualifying": "13",
+        "race": "10"
+      },
+      {
+        "driver": "Ericsson",
+        "qualifying": "14",
+        "race": "0"
+      },
+      {
+        "driver": "Giovinazzi",
+        "qualifying": "16",
+        "race": "12"
+      },
+      {
+        "driver": "Magnussen",
+        "qualifying": "17",
+        "race": "0"
+      },
+      {
+        "driver": "Vandoorne",
+        "qualifying": "18",
+        "race": "13"
+      },
+      {
+        "driver": "Stroll",
+        "qualifying": "20",
+        "race": "0"
+      },
+      {
+        "driver": "Palmer",
+        "qualifying": "19",
+        "race": "0"
+      }
+    ]
+  }
+]
