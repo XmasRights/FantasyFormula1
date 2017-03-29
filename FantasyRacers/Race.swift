@@ -8,11 +8,11 @@
 
 import Foundation
 
-enum Location: Int
+enum Location: String
 {
-    case australia, bahrain, china, russia, spain, monaco, canada, europe, austria
-    case britain, hungary, germany, belgium, italy, singapore, malaysia, japan
-    case usa, mexico, brazil, abuDhabi
+    case Australia, China, Bahrain, Russia, Spain, Monaco, Canada, Azerbaijan
+    case Austra, Britain, Hungary, Belgium, Italy, Singapore, Malaysia, Japan
+    case USA, Mexico, Brazil, AbuDhabi
 }
 
 struct Race
