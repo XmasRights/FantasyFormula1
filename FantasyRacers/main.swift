@@ -8,31 +8,24 @@
 
 import Foundation
 
-func getFileFromCommandLine() -> String
-{
-    assert(CommandLine.arguments.count >= 2, "Incorrect number of command line arguments")
 
-    let filenameWithTilde = CommandLine.arguments[1]
-    let filename = NSString(string: filenameWithTilde).expandingTildeInPath
+assert(CommandLine.arguments.count >= 3, "Incorrect number of command line arguments")
 
-    return filename
-}
+let data = AppData(commandLineArguments: CommandLine.arguments)
 
-func getFileContents() -> String
-{
-    do
-    {
-        let file     = getFileFromCommandLine()
-        let contents = try File.getContents(file: file)
-        return contents
-    }
-    catch { print ("Could not read the data file") }
-    return String();
-}
+let driverJSON = data.getDriverData()
+let drivers    = JSONDecoder.parse(jsonString: driverJSON, withFormatter: Formatters.driverDataFormatter)
 
-let contents = getFileContents()
-let drivers  = JSONDecoder.parse(jsonString: contents, withFormatter: Formatters.driverDataFormatter)
+print ("Drivers")
 print (drivers)
+print ("\n")
+
+let raceJSON = data.getRaceData()
+let races    = JSONDecoder.parse(jsonString: raceJSON, withFormatter: Formatters.driverDataFormatter)
+
+print ("Race Results")
+print (races)
+print ("\n")
 
 
 
