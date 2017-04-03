@@ -46,6 +46,14 @@ struct Driver
     let teammate: DriverName
 }
 
+extension Driver : CustomStringConvertible
+{
+    var description: String
+    {
+        return name.rawValue
+    }
+}
+
 struct DriverResult
 {
     let driver: DriverName
