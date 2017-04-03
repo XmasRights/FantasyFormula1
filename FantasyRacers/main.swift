@@ -9,24 +9,27 @@
 import Foundation
 
 
-assert(CommandLine.arguments.count >= 3, "Incorrect number of command line arguments")
+//assert(CommandLine.arguments.count >= 3, "Incorrect number of command line arguments")
+//
+//let data = AppData(commandLineArguments: CommandLine.arguments)
+//
+//let driverJSON = data.getDriverData()
+//let drivers    = JSONDecoder.parse(jsonString: driverJSON, withFormatter: Formatters.driverDataFormatter)
+//
+//print ("Drivers")
+//print (drivers)
+//print ("\n")
+//
+//let raceJSON = data.getRaceData()
+//let races    = JSONDecoder.parse(jsonString: raceJSON, withFormatter: Formatters.raceResultFormatter)
+//
+//print ("Race Results")
+//print (races)
+//print ("\n")
 
-let data = AppData(commandLineArguments: CommandLine.arguments)
 
-let driverJSON = data.getDriverData()
-let drivers    = JSONDecoder.parse(jsonString: driverJSON, withFormatter: Formatters.driverDataFormatter)
+let a = [1, 2, 3]
 
-print ("Drivers")
-print (drivers)
-print ("\n")
-
-let raceJSON = data.getRaceData()
-let races    = JSONDecoder.parse(jsonString: raceJSON, withFormatter: Formatters.raceResultFormatter)
-
-print ("Race Results")
-print (races)
-print ("\n")
-
-
+print (a.uniquePermutations(withMaxLength: 3))
 
 
