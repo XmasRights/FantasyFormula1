@@ -10,14 +10,19 @@ import Foundation
 
 extension Array
 {
-    private func uniquePermutations (_ listA: [Element], listB: [Element], output: inout [[Element]], withMaxLength optMaxLength: Int?)
+    private func uniquePermutations(_ listA: [Element], listB: [Element], output: inout [[Element]], withPredicate predicate: (([Element]) -> Bool)?)
     {
-        if let maxLength = optMaxLength
+        if let unwrappedPredicate = predicate
         {
-            if (listA.count > maxLength) { return }
+            if (unwrappedPredicate(listA))
+            {
+                output.append(listA)
+            }
         }
-
-        output.append(listA)
+        else
+        {
+            output.append(listA)
+        }
 
         if (!listB.isEmpty)
         {
@@ -26,15 +31,22 @@ extension Array
                 var newA = listA; newA.append(element)
                 var newB = listB; newB.removeSubrange(0...index)
 
-                uniquePermutations(newA, listB: newB, output: &output, withMaxLength: optMaxLength)
+                uniquePermutations(newA, listB: newB, output: &output, withPredicate: predicate)
             }
         }
     }
 
-    func uniquePermutations(withMaxLength maxLength: Int? = nil) -> [[Element]]
+    func uniquePermutations() -> [[Element]]
     {
         var output = [[Element]]()
-        uniquePermutations([], listB: self, output: &output, withMaxLength: maxLength)
+        uniquePermutations([], listB: self, output: &output, withPredicate: nil)
+        return output
+    }
+
+    func uniquePermutations(withPredicate predicate: @escaping ([Element]) -> Bool)  -> [[Element]]
+    {
+        var output = [[Element]]()
+        uniquePermutations([], listB: self, output: &output, withPredicate: predicate)
         return output
     }
 }

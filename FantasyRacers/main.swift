@@ -19,8 +19,13 @@ let drivers    = JSONDecoder.parse(jsonString: driverJSON, withFormatter: Format
 //let raceJSON = data.getRaceData()
 //let races    = JSONDecoder.parse(jsonString: raceJSON, withFormatter: Formatters.raceResultFormatter)
 
-let driverLineups = drivers.uniquePermutations(withMaxLength: 3).filter { return $0.count == 3 }
+let driverLineups = drivers.uniquePermutations(withPredicate: { $0.count == 3 })
 
 print ("Unique Permutations")
-print (driverLineups)
+
+for lineup in driverLineups
+{
+    let value = lineup.reduce(0, { $0 + $1.price })
+    print ("\(lineup) -> \(value)")
+}
 
