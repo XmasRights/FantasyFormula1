@@ -33,7 +33,7 @@ struct AppData
         return getContents(ofFile: arg)
     }
 
-    func getContents (ofFile file: String) -> String
+    private func getContents (ofFile file: String) -> String
     {
         do
         {

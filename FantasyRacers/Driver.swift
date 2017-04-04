@@ -32,12 +32,6 @@ enum DriverName: String
     case Kvyat
 }
 
-enum TeamName: String
-{
-    case Mercedes, RedBull, Ferrari, ForceIndia, Renault, McLaren
-    case Williams, Sauber, ToroRosso, Haas
-}
-
 struct Driver
 {
     let name:     DriverName
@@ -53,25 +47,3 @@ extension Driver : CustomStringConvertible
         return name.rawValue
     }
 }
-
-struct DriverResult
-{
-    let driver: DriverName
-    let qualifyingPosition: Int
-    let racePosition: Int
-}
-
-struct Team
-{
-    let name:  TeamName
-    let price: Int
-}
-
-extension Team: CustomStringConvertible
-{
-    var description: String
-    {
-        return name.rawValue
-    }
-}
-
