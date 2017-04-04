@@ -11,6 +11,9 @@ import Foundation
 
 assert(CommandLine.arguments.count >= 4, "Incorrect number of command line arguments")
 
+let budget = 75
+
+
 let data = AppData(commandLineArguments: CommandLine.arguments)
 
 let teamJSON = data.getTeamData();
@@ -23,43 +26,33 @@ let drivers    = JSONDecoder.parse(jsonString: driverJSON, withFormatter: Format
 let raceJSON = data.getRaceData()
 let races    = JSONDecoder.parse(jsonString: raceJSON, withFormatter: Formatters.raceResultFormatter)
 
-for team in teams
-{
-    let score = Scoring.points(forTeam: team.name, atRace: .Australia, usingResults: races, andDrivers: drivers)
 
-    print ("\(team.name) -> \(score)")
-}
+print ("Generating Team Lineups")
+let teamLineups   = teams.uniquePermutations(withPredicate: { $0.count == 3 })
+print ("... found \(teamLineups.count) combinations")
 
-print ("")
-
-for driver in drivers
-{
-    let points = Scoring.points(forDriver: driver, atRace: .Australia, usingResults: races)
-    print ("\(driver.name) -> \(points)")
-}
-
-
-/*
-print ("Unique Permutations")
+print ("Generating Driver Lineups")
 let driverLineups = drivers.uniquePermutations(withPredicate: { $0.count == 3 })
-for lineup in driverLineups
-{
-    let value = lineup.reduce(0, { $0 + $1.price })
-    print ("\(lineup) -> \(value)")
-}
-*/
+print ("... found \(driverLineups.count) combinations")
 
-/*
-var orderedList = [(Int, Driver)]()
-for driver in drivers
+func getAllCombinations(ofTeams teams: [[Team]], andDrivers drivers: [[Driver]]) -> [FantasyEntry]
 {
-    let points = Scoring.points(forDriver: driver, atRace: .Australia, usingResults: races)
-    orderedList.append((points, driver))
+    var output = [FantasyEntry]()
+    for team in teams
+    {
+        for driver in drivers
+        {
+            let entry = FantasyEntry(drivers: driver, teams: team)
+            if (entry.price <= budget)
+            {
+                output.append(entry)
+            }
+        }
+    }
+    return output
 }
 
-for item in orderedList.sorted(by: {$0.0 > $1.0})
-{
-    print ("\(item.0) -> \(item.1.name.rawValue) (\(Float(item.0) / Float(item.1.price)) points per million)")
-}
-*/
+print ("Generating Entries")
+let entries = getAllCombinations(ofTeams: teamLineups, andDrivers: driverLineups)
+print ("... found \(entries.count) combinations")
 
