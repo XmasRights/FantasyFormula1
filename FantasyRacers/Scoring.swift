@@ -17,8 +17,18 @@ struct Scoring
         self.race = race
         calculateScores (forDrivers: allDrivers, usingResults: allResults)
         calculateScores (forTeams:   allTeams,   usingResults: allResults, andDriverData: allDrivers)
-        
-        print (teamScores)
+    }
+    
+    func getScore(forDriver driver: Driver) -> Int
+    {
+        guard let score = driverScores[driver.name] else { print("No score for \(driver.name)"); return 0 }
+        return score
+    }
+    
+    func getScore(forTeam team: Team) -> Int
+    {
+        guard let score = teamScores[team.name] else { print("No score for \(team.name)"); return 0 }
+        return score
     }
     
     // =========================================================================
