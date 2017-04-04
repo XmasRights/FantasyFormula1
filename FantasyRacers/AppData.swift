@@ -27,6 +27,12 @@ struct AppData
         return getContents(ofFile: arg)
     }
 
+    func getTeamData() -> String
+    {
+        let arg = getFormattedArgument(atIndex: 3)
+        return getContents(ofFile: arg)
+    }
+
     func getContents (ofFile file: String) -> String
     {
         do

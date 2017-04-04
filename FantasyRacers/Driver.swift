@@ -60,3 +60,18 @@ struct DriverResult
     let qualifyingPosition: Int
     let racePosition: Int
 }
+
+struct Team
+{
+    let name:  TeamName
+    let price: Int
+}
+
+extension Team: CustomStringConvertible
+{
+    var description: String
+    {
+        return name.rawValue
+    }
+}
+

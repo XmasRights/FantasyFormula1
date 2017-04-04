@@ -53,6 +53,23 @@ struct Formatters
         return output
     }
 
+    static func teamDataFormatter (jsonArray: AnyObject) -> [Team]
+    {
+        var output = [Team]()
+
+        for entry in jsonArray as! [AnyObject]
+        {
+            guard let teamnameStr = entry["Team"]  as? String,
+                  let price    = entry["Price"] as? Int     else { continue }
+
+            guard let teamname = TeamName(rawValue: teamnameStr) else { continue }
+
+            let team = Team(name: teamname, price: price)
+            output.append(team)
+        }
+        return output
+    }
+
     static func raceResultFormatter (jsonArray: AnyObject) -> [RaceResult]
     {
         var output = [RaceResult]()
