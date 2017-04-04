@@ -10,95 +10,149 @@ import Foundation
 
 struct Scoring
 {
-    static func points(forTeam team: TeamName, atRace race: Location, usingResults results: [RaceResult], andDrivers driverData: [Driver]) -> Int
+    let race: Location
+    
+    init(race: Location, allResults: [RaceResult], allDrivers: [Driver], allTeams: [Team])
     {
-        var points = 0;
-
-        let drivers = getDrivers(inTeam: team, usingDriverData: driverData)
-
+        self.race = race
+        calculateScores (forDrivers: allDrivers, usingResults: allResults)
+        calculateScores (forTeams:   allTeams,   usingResults: allResults, andDriverData: allDrivers)
+        
+        print (teamScores)
+    }
+    
+    // =========================================================================
+    // MARK: Results
+    // =========================================================================
+    
+    private func getResults(forRace race: Location, usingResults results: [RaceResult]) -> [RaceResult]
+    {
+        return results.filter { return $0.location == race }
+    }
+    
+    private func getResult(forDriver driver: DriverName, usingResults results: [RaceResult]) -> RaceResult?
+    {
+        return results.filter({ return $0.driver == driver }).first
+    }
+    
+    private func getDrivers(inTeam team: Team, usingDriverData driverData: [Driver]) -> [Driver]
+    {
+        return driverData.filter({ $0.team == team.name })
+    }
+    
+    // =========================================================================
+    // MARK: Score Calculators
+    // =========================================================================
+    
+    private var driverScores = [DriverName : Int]()
+    private var teamScores   = [TeamName   : Int]()
+    
+    private mutating func calculateScores (forDrivers drivers: [Driver], usingResults results: [RaceResult])
+    {
         for driver in drivers
         {
-            points += pointsForFinishing(forDriver: driver, atRace: race, usingResults: results)
+            calculateScore(forDriver: driver, usingResults: results)
         }
-
-        return points;
     }
-
-    static func points(forDriver driver: Driver, atRace race: Location, usingResults results: [RaceResult]) -> Int
+    
+    private mutating func calculateScore (forDriver driver: Driver, usingResults results: [RaceResult])
     {
-        var points = 0;
-
-        points += pointsForFinishing             (forDriver: driver, atRace: race, usingResults: results)
-        points += pointsForPole                  (forDriver: driver, atRace: race, usingResults: results)
-        points += pointsForOutqualifyingTeammate (forDriver: driver, atRace: race, usingResults: results)
-        points += pointsForGainingPositions      (forDriver: driver, atRace: race, usingResults: results)
-
-        return points
+        guard let driverResult = getResult(forDriver: driver.name, usingResults: results)
+            else { print("No result for \(driver.name)"); return }
+        
+        var score = 0
+        
+        score += finishingPoints             (forDriver: driver, usingResult:  driverResult)
+        score += polePositionPoints          (forDriver: driver, usingResult:  driverResult)
+        score += outqualifyingTeammatePoints (forDriver: driver, usingResults: results)
+        score += gainedPositionPoints        (forDriver: driver, usingResult:  driverResult)
+        
+        driverScores[driver.name] = score
     }
-
-    static private func pointsForFinishing(forDriver driver: Driver, atRace race: Location, usingResults results: [RaceResult]) -> Int
+    
+    private mutating func calculateScores (forTeams teams: [Team], usingResults results: [RaceResult], andDriverData driverData: [Driver])
+    {
+        for team in teams
+        {
+            calculateScore(forTeam: team, usingResults: results, andDriverData: driverData)
+        }
+    }
+    
+    private mutating func calculateScore (forTeam team: Team, usingResults results: [RaceResult], andDriverData driverData: [Driver])
+    {
+        let drivers = getDrivers(inTeam: team, usingDriverData: driverData)
+        assert(drivers.count == 2, "Incorrect number of drivers in \(team.name)")
+        
+        var score = 0
+        for driver in drivers
+        {
+            guard let result = getResult(forDriver: driver.name, usingResults: results)
+                else { print("No result for \(driver.name)"); return }
+            
+            score += finishingPoints(forDriver: driver, usingResult: result)
+        }
+        
+        teamScores[team.name] = score
+    }
+    
+    // =========================================================================
+    // MARK: Point methods
+    // =========================================================================
+    
+    private func finishingPoints(forDriver driver: Driver, usingResult result: RaceResult) -> Int
     {
         let points = [25, 18, 15, 12, 10, 8, 6, 4, 2, 1]
-        guard let result = getResult(forDriver: driver, atRace: race, usingResults: results)
-            else { print ("Could not find result for \(driver) at \(race.rawValue))"); return 0 }
-
+        
         switch result.racePosition
         {
+            case .Finished(let position):
+                if (position <= points.count) { return points[position - 1] }
+                else { return 0 }
+            
             case .DNF:
                 return 0
-
-            case .Finished(let pos):
-                if (pos <= points.count) { return points[pos - 1] }
         }
-
-        return 0
     }
-
-    static private func pointsForPole(forDriver driver: Driver, atRace race: Location, usingResults results: [RaceResult]) -> Int
+    
+    private func polePositionPoints(forDriver driver: Driver, usingResult result: RaceResult) -> Int
     {
-        guard let result = getResult(forDriver: driver, atRace: race, usingResults: results)
-            else { print ("Could not find result for \(driver) at \(race.rawValue))"); return 0 }
-
         switch result.qulifyingPosition
         {
-            case .Finished(let position) where position == 1:
-                return 10
-
-            default:
+            case .Finished(let position):
+                return (position == 1 ? 10 : 0)
+                
+            case .DNF:
                 return 0
         }
     }
-
-    static private func pointsForOutqualifyingTeammate(forDriver driver: Driver, atRace race: Location, usingResults results: [RaceResult]) -> Int
+    
+    private func outqualifyingTeammatePoints(forDriver driver: Driver, usingResults results: [RaceResult]) -> Int
     {
-        guard let result = getResult(forDriver: driver, atRace: race, usingResults: results)
-            else { print ("Could not find result for \(driver) at \(race.rawValue))"); return 0 }
-
-        guard let teammateResult = getResult(forDriver: driver.teammate, atRace: race, usingResults: results)
-            else { print ("Could not find result for \(driver.teammate) at \(race.rawValue))"); return 0 }
-
-        switch result.qulifyingPosition
+        guard let driverResult = getResult(forDriver: driver.name, usingResults: results)
+            else { print("No result for \(driver.name)"); return 0 }
+        
+        guard let teammateResult = getResult(forDriver: driver.teammate, usingResults: results)
+            else { print("No result for \(driver.teammate)"); return 0 }
+        
+        switch driverResult.qulifyingPosition
         {
             case .Finished(let driverPosition):
                 switch teammateResult.qulifyingPosition
                 {
                     case .Finished(let teammatePosition):
                         return (driverPosition < teammatePosition ? 5 : 0)
-
-                    default:
+                        
+                    case .DNF:
                         return 5
                 }
-
-            default:
+                
+            case .DNF:
                 return 0
-            }
+        }
     }
-
-    static private func pointsForGainingPositions(forDriver driver: Driver, atRace race: Location, usingResults results: [RaceResult]) -> Int
+    
+    private func gainedPositionPoints(forDriver driver: Driver, usingResult result: RaceResult) -> Int
     {
-        guard let result = getResult(forDriver: driver, atRace: race, usingResults: results)
-            else { print ("Could not find result for \(driver) at \(race.rawValue))"); return 0 }
-
         switch result.qulifyingPosition
         {
             case .Finished(let qualiPos):
@@ -113,33 +167,13 @@ struct Scoring
                         {
                             return 0
                         }
-
+                        
                     case .DNF:
                         return 0
                 }
-
             case .DNF:
                 return 0
         }
-
-    }
-
-    static private func getResult(forDriver driver: Driver, atRace race: Location, usingResults results: [RaceResult]) -> RaceResult?
-    {
-        return getResult(forDriver: driver.name, atRace: race, usingResults: results)
-    }
-
-    static private func getResult(forDriver driver: DriverName, atRace race: Location, usingResults results: [RaceResult]) -> RaceResult?
-    {
-        let matches = results.filter { $0.driver == driver && $0.location == race }
-        return matches.first
-    }
-
-    static private func getDrivers(inTeam team: TeamName, usingDriverData drivers: [Driver]) -> [Driver]
-    {
-        let output = drivers.filter { $0.team == team }
-        assert (output.count == 2, "Wrong number of drivers in \(team)")
-        return output
     }
 
 }

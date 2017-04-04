@@ -18,8 +18,12 @@ let data = AppData(commandLineArguments: CommandLine.arguments)
 
 let teams   = data.getTeamData();
 let drivers = data.getDriverData()
-let races   = data.getRaceData()
+let results = data.getRaceData()
 
+let scores = Scoring(race: .Australia, allResults: results, allDrivers: drivers, allTeams: teams)
+
+
+/*
 
 print ("Generating Team Lineups")
 let teamLineups   = teams.uniquePermutations(withPredicate: { $0.count == 3 })
@@ -50,3 +54,4 @@ print ("Generating Entries")
 let entries = getAllCombinations(ofTeams: teamLineups, andDrivers: driverLineups)
 print ("... found \(entries.count) combinations")
 
+*/
