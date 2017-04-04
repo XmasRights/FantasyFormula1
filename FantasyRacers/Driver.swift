@@ -29,13 +29,13 @@ enum DriverName: String
     case Ericsson
     case Wehrlein
     case Sainz
-    case Kyvat
+    case Kvyat
 }
 
 enum Team: String
 {
     case Mercedes, RedBull, Ferrari, ForceIndia, Renault, McLaren
-    case Williams, Sauber, TorroRosso, Haas
+    case Williams, Sauber, ToroRosso, Haas
 }
 
 struct Driver

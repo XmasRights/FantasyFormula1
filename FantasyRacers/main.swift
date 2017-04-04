@@ -30,10 +30,17 @@ for lineup in driverLineups
 }
 */
 
+var orderedList = [(Int, Driver)]()
+
 for driver in drivers
 {
     let points = Scoring.points(forDriver: driver, atRace: .Australia, usingResults: races)
-    print ("\(driver) -> \(points)")
+    orderedList.append((points, driver))
+}
+
+for item in orderedList.sorted(by: {$0.0 > $1.0})
+{
+    print ("\(item.0) -> \(item.1.name.rawValue) (\(Float(item.0) / Float(item.1.price)) points per million)")
 }
 
 
