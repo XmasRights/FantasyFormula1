@@ -10,6 +10,8 @@
 		4B9E3BEF1E93908C00CF838E /* Scoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9E3BEE1E93908C00CF838E /* Scoring.swift */; };
 		4BAB15791E8BCF9F004B97EE /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAB15781E8BCF9F004B97EE /* JSON.swift */; };
 		4BC680AF1E93F7AE0046D035 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC680AE1E93F7AE0046D035 /* Team.swift */; };
+		4BE128451E945EA600906E4F /* Simulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE128441E945EA600906E4F /* Simulator.swift */; };
+		4BE128471E94671700906E4F /* Printers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE128461E94671700906E4F /* Printers.swift */; };
 		4BF3E46B1E93FC2A00E3F49C /* FantasyEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF3E46A1E93FC2A00E3F49C /* FantasyEntry.swift */; };
 		6A0774E91D0C61170047A59F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0774E81D0C61170047A59F /* main.swift */; };
 		6A0774F21D0C623B0047A59F /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0774F11D0C623B0047A59F /* Driver.swift */; };
@@ -34,6 +36,8 @@
 		4B9E3BEE1E93908C00CF838E /* Scoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scoring.swift; sourceTree = "<group>"; };
 		4BAB15781E8BCF9F004B97EE /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		4BC680AE1E93F7AE0046D035 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		4BE128441E945EA600906E4F /* Simulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simulator.swift; sourceTree = "<group>"; };
+		4BE128461E94671700906E4F /* Printers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Printers.swift; sourceTree = "<group>"; };
 		4BF3E46A1E93FC2A00E3F49C /* FantasyEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FantasyEntry.swift; sourceTree = "<group>"; };
 		6A0774E51D0C61170047A59F /* FantasyRacers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FantasyRacers; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0774E81D0C61170047A59F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -54,6 +58,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BE128431E945D6300906E4F /* Data Processing */ = {
+			isa = PBXGroup;
+			children = (
+				4B9E3BEE1E93908C00CF838E /* Scoring.swift */,
+				4BE128441E945EA600906E4F /* Simulator.swift */,
+				4BE128461E94671700906E4F /* Printers.swift */,
+			);
+			name = "Data Processing";
+			sourceTree = "<group>";
+		};
 		6A0774DC1D0C61170047A59F = {
 			isa = PBXGroup;
 			children = (
@@ -73,7 +87,8 @@
 		6A0774E71D0C61170047A59F /* FantasyRacers */ = {
 			isa = PBXGroup;
 			children = (
-				6A0774F81D0C643A0047A59F /* Processors */,
+				4BE128431E945D6300906E4F /* Data Processing */,
+				6A0774F81D0C643A0047A59F /* Data Parsing */,
 				6A0774F51D0C624E0047A59F /* Models */,
 				6A0774E81D0C61170047A59F /* main.swift */,
 				6A0775051D0CAA1F0047A59F /* Extensions.swift */,
@@ -87,19 +102,18 @@
 				6A0774F11D0C623B0047A59F /* Driver.swift */,
 				4BC680AE1E93F7AE0046D035 /* Team.swift */,
 				6A0774F31D0C62440047A59F /* Race.swift */,
-				4B9E3BEE1E93908C00CF838E /* Scoring.swift */,
 				4BF3E46A1E93FC2A00E3F49C /* FantasyEntry.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
 		};
-		6A0774F81D0C643A0047A59F /* Processors */ = {
+		6A0774F81D0C643A0047A59F /* Data Parsing */ = {
 			isa = PBXGroup;
 			children = (
 				6A0774F91D0C64530047A59F /* AppData.swift */,
 				4BAB15781E8BCF9F004B97EE /* JSON.swift */,
 			);
-			name = Processors;
+			name = "Data Parsing";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +180,11 @@
 				4BF3E46B1E93FC2A00E3F49C /* FantasyEntry.swift in Sources */,
 				4BAB15791E8BCF9F004B97EE /* JSON.swift in Sources */,
 				4BC680AF1E93F7AE0046D035 /* Team.swift in Sources */,
+				4BE128451E945EA600906E4F /* Simulator.swift in Sources */,
 				6A0775061D0CAA1F0047A59F /* Extensions.swift in Sources */,
 				6A0774F21D0C623B0047A59F /* Driver.swift in Sources */,
 				6A0774E91D0C61170047A59F /* main.swift in Sources */,
+				4BE128471E94671700906E4F /* Printers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

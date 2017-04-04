@@ -11,8 +11,6 @@ import Foundation
 
 assert(CommandLine.arguments.count >= 4, "Incorrect number of command line arguments")
 
-let budget = 75
-
 
 let data = AppData(commandLineArguments: CommandLine.arguments)
 
@@ -22,36 +20,12 @@ let results = data.getRaceData()
 
 let scores = Scoring(race: .Australia, allResults: results, allDrivers: drivers, allTeams: teams)
 
+let simulator = Simulator(drivers: drivers, teams: teams)
+let entries   = simulator.getEntries(usingFilter: { $0.price <= 75 && $0.getScore(scoreing: scores) > 100 })
 
-/*
 
-print ("Generating Team Lineups")
-let teamLineups   = teams.uniquePermutations(withPredicate: { $0.count == 3 })
-print ("... found \(teamLineups.count) combinations")
-
-print ("Generating Driver Lineups")
-let driverLineups = drivers.uniquePermutations(withPredicate: { $0.count == 3 })
-print ("... found \(driverLineups.count) combinations")
-
-func getAllCombinations(ofTeams teams: [[Team]], andDrivers drivers: [[Driver]]) -> [FantasyEntry]
-{
-    var output = [FantasyEntry]()
-    for team in teams
-    {
-        for driver in drivers
-        {
-            let entry = FantasyEntry(drivers: driver, teams: team)
-            if (entry.price <= budget)
-            {
-                output.append(entry)
-            }
-        }
-    }
-    return output
-}
-
-print ("Generating Entries")
-let entries = getAllCombinations(ofTeams: teamLineups, andDrivers: driverLineups)
-print ("... found \(entries.count) combinations")
-
-*/
+Print.scores(forDriver: drivers, usingScoring: scores)
+print("")
+Print.scores(forTeams: teams, usingScoring: scores)
+print("")
+Print.scores(forEntries: entries, usingScoring: scores)
