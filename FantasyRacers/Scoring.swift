@@ -137,7 +137,9 @@ struct Scoring
 
     static private func getDrivers(inTeam team: TeamName, usingDriverData drivers: [Driver]) -> [Driver]
     {
-        return drivers.filter { $0.team == team }
+        let output = drivers.filter { $0.team == team }
+        assert (output.count == 2, "Wrong number of drivers in \(team)")
+        return output
     }
 
 }

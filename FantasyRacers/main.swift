@@ -16,16 +16,28 @@ let data = AppData(commandLineArguments: CommandLine.arguments)
 let teamJSON = data.getTeamData();
 let teams    = JSONDecoder.parse(jsonString: teamJSON, withFormatter: Formatters.teamDataFormatter)
 
-print (teams);
 
-
-/*
 let driverJSON = data.getDriverData()
 let drivers    = JSONDecoder.parse(jsonString: driverJSON, withFormatter: Formatters.driverDataFormatter)
 
 let raceJSON = data.getRaceData()
 let races    = JSONDecoder.parse(jsonString: raceJSON, withFormatter: Formatters.raceResultFormatter)
-*/
+
+for team in teams
+{
+    let score = Scoring.points(forTeam: team.name, atRace: .Australia, usingResults: races, andDrivers: drivers)
+
+    print ("\(team.name) -> \(score)")
+}
+
+print ("")
+
+for driver in drivers
+{
+    let points = Scoring.points(forDriver: driver, atRace: .Australia, usingResults: races)
+    print ("\(driver.name) -> \(points)")
+}
+
 
 /*
 print ("Unique Permutations")
