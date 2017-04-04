@@ -16,16 +16,24 @@ let data = AppData(commandLineArguments: CommandLine.arguments)
 let driverJSON = data.getDriverData()
 let drivers    = JSONDecoder.parse(jsonString: driverJSON, withFormatter: Formatters.driverDataFormatter)
 
-//let raceJSON = data.getRaceData()
-//let races    = JSONDecoder.parse(jsonString: raceJSON, withFormatter: Formatters.raceResultFormatter)
+let raceJSON = data.getRaceData()
+let races    = JSONDecoder.parse(jsonString: raceJSON, withFormatter: Formatters.raceResultFormatter)
 
-let driverLineups = drivers.uniquePermutations(withPredicate: { $0.count == 3 })
 
+/*
 print ("Unique Permutations")
-
+let driverLineups = drivers.uniquePermutations(withPredicate: { $0.count == 3 })
 for lineup in driverLineups
 {
     let value = lineup.reduce(0, { $0 + $1.price })
     print ("\(lineup) -> \(value)")
 }
+*/
+
+for driver in drivers
+{
+    let points = Scoring.points(forDriver: driver, atRace: .Australia, usingResults: races)
+    print ("\(driver) -> \(points)")
+}
+
 
