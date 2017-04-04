@@ -32,7 +32,7 @@ enum DriverName: String
     case Kvyat
 }
 
-enum Team: String
+enum TeamName: String
 {
     case Mercedes, RedBull, Ferrari, ForceIndia, Renault, McLaren
     case Williams, Sauber, ToroRosso, Haas
@@ -42,7 +42,7 @@ struct Driver
 {
     let name:     DriverName
     let price:    Int
-    let team:     Team
+    let team:     TeamName
     let teammate: DriverName
 }
 

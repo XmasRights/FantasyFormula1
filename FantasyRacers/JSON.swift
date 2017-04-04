@@ -40,7 +40,7 @@ struct Formatters
 
             guard let name     = DriverName(rawValue: nameStr),
                   let price    = Int(priceStr),
-                  let team     = Team(rawValue: teamStr),
+                  let team     = TeamName(rawValue: teamStr),
                   let teammate = DriverName(rawValue: teammateStr) else { continue }
 
             let driver = Driver(name: name,

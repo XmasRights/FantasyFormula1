@@ -10,6 +10,20 @@ import Foundation
 
 struct Scoring
 {
+    static func points(forTeam team: TeamName, atRace race: Location, usingResults results: [RaceResult], andDrivers driverData: [Driver]) -> Int
+    {
+        var points = 0;
+
+        let drivers = getDrivers(inTeam: team, usingDriverData: driverData)
+
+        for driver in drivers
+        {
+            points += pointsForFinishing(forDriver: driver, atRace: race, usingResults: results)
+        }
+
+        return points;
+    }
+
     static func points(forDriver driver: Driver, atRace race: Location, usingResults results: [RaceResult]) -> Int
     {
         var points = 0;
@@ -117,8 +131,13 @@ struct Scoring
 
     static private func getResult(forDriver driver: DriverName, atRace race: Location, usingResults results: [RaceResult]) -> RaceResult?
     {
-        let matches = results.filter({ $0.driver == driver && $0.location == race })
+        let matches = results.filter { $0.driver == driver && $0.location == race }
         return matches.first
+    }
+
+    static private func getDrivers(inTeam team: TeamName, usingDriverData drivers: [Driver]) -> [Driver]
+    {
+        return drivers.filter { $0.team == team }
     }
 
 }
