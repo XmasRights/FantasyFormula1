@@ -15,24 +15,30 @@ struct AppData
         arguments = commandLineArguments
     }
 
-    func getDriverData() -> String
+    func getDriverData() -> [Driver]
     {
-        let arg = getFormattedArgument(atIndex: 1)
-        return getContents(ofFile: arg)
+        let contents = getJSONContents(atIndex: 1)
+        return JSONDecoder.parse(jsonString: contents, withFormatter: Formatters.driverDataFormatter)
     }
 
-    func getRaceData() -> String
+    func getRaceData() -> [RaceResult]
     {
-        let arg = getFormattedArgument(atIndex: 2)
-        return getContents(ofFile: arg)
+        let contents = getJSONContents(atIndex: 2)
+        return JSONDecoder.parse(jsonString: contents, withFormatter: Formatters.raceResultFormatter)
     }
 
-    func getTeamData() -> String
+    func getTeamData() -> [Team]
     {
-        let arg = getFormattedArgument(atIndex: 3)
-        return getContents(ofFile: arg)
+        let contents = getJSONContents(atIndex: 3)
+        return JSONDecoder.parse(jsonString: contents, withFormatter: Formatters.teamDataFormatter)
     }
 
+    private func getJSONContents (atIndex index: Int) -> String
+    {
+        let arg = getFormattedArgument(atIndex: index)
+        return getContents(ofFile: arg)
+    }
+    
     private func getContents (ofFile file: String) -> String
     {
         do

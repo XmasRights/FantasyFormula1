@@ -16,15 +16,9 @@ let budget = 75
 
 let data = AppData(commandLineArguments: CommandLine.arguments)
 
-let teamJSON = data.getTeamData();
-let teams    = JSONDecoder.parse(jsonString: teamJSON, withFormatter: Formatters.teamDataFormatter)
-
-
-let driverJSON = data.getDriverData()
-let drivers    = JSONDecoder.parse(jsonString: driverJSON, withFormatter: Formatters.driverDataFormatter)
-
-let raceJSON = data.getRaceData()
-let races    = JSONDecoder.parse(jsonString: raceJSON, withFormatter: Formatters.raceResultFormatter)
+let teams   = data.getTeamData();
+let drivers = data.getDriverData()
+let races   = data.getRaceData()
 
 
 print ("Generating Team Lineups")
