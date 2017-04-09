@@ -42,7 +42,7 @@ struct Scoring
     
     private func getResult(forDriver driver: DriverName, usingResults results: [RaceResult]) -> RaceResult?
     {
-        return results.filter({ return $0.driver == driver }).first
+        return results.filter({ return ($0.driver == driver) && ($0.location == race) }).first
     }
     
     private func getDrivers(inTeam team: Team, usingDriverData driverData: [Driver]) -> [Driver]
