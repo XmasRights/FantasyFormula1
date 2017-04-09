@@ -28,11 +28,22 @@ struct Print
         }
     }
     
-    static func scores(forEntries entries: [FantasyEntry], usingScoring scores: Scoring)
+    static func scores(forEntries entries: [FantasyEntry], usingRaceScore scores: Scoring)
     {
-        for entry in entries.sorted(by: { $0.getScore(scoreing: scores) > $1.getScore(scoreing: scores) })
+        Print.scores(forEntries: entries, usingRaceScores: [scores])
+    }
+
+    static func scores(forEntries entries: [FantasyEntry], usingRaceScores raceScores: [Scoring])
+    {
+        let score = { (entry: FantasyEntry) -> Int in
+            var output = 0
+            for raceScore in raceScores { output += raceScore.getScore(forEntry: entry) }
+            return output
+        }
+
+        for entry in entries.sorted(by: { score($0) > score($1) })
         {
-            print ("\(entry.getScore(scoreing: scores)) -> \(entry)")
+            print ("\(score(entry)) -> \(entry)")
         }
     }
 }
