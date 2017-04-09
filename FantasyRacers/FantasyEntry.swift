@@ -23,17 +23,7 @@ extension FantasyEntry: CustomStringConvertible
 {
     var description: String
     {
-        return "\(drivers), \(teams), -> £\(price)million"
+        return "\(drivers), \(teams) -> £\(price)million"
     }
 }
 
-extension FantasyEntry
-{
-    func getScore (scoreing: Scoring) -> Int
-    {
-        let driverScore = drivers.reduce(0, { $0 + scoreing.getScore(forDriver: $1) })
-        let teamScore   = teams  .reduce(0, { $0 + scoreing.getScore(forTeam: $1)   })
-        
-        return driverScore + teamScore
-    }
-}

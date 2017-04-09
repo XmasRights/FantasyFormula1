@@ -30,6 +30,16 @@ struct Scoring
         guard let score = teamScores[team.name] else { print("No score for \(team.name)"); return 0 }
         return score
     }
+
+    func getScore(forEntry entry: FantasyEntry) -> Int
+    {
+        var score = 0
+
+        for driver in entry.drivers { score += getScore(forDriver: driver) }
+        for team   in entry.teams   { score += getScore(forTeam: team)     }
+
+        return score
+    }
     
     // =========================================================================
     // MARK: Results
