@@ -208,5 +208,110 @@
         "race": "13"
       }
     ]
+  },
+  {
+    "location": "Bahrain",
+    "results": [
+      {
+        "driver": "Hamilton",
+        "qualifying": "2",
+        "race": "2"
+      },
+      {
+        "driver": "Vettel",
+        "qualifying": "3",
+        "race": "1"
+      },
+      {
+        "driver": "Bottas",
+        "qualifying": "1",
+        "race": "3"
+      },
+      {
+        "driver": "Raikkonen",
+        "qualifying": "5",
+        "race": "4"
+      },
+      {
+        "driver": "Verstappen",
+        "qualifying": "6",
+        "race": "0"
+      },
+      {
+        "driver": "Grosjean",
+        "qualifying": "9",
+        "race": "8"
+      },
+      {
+        "driver": "Massa",
+        "qualifying": "8",
+        "race": "6"
+      },
+      {
+        "driver": "Sainz",
+        "qualifying": "16",
+        "race": "0"
+      },
+      {
+        "driver": "Kvyat",
+        "qualifying": "11",
+        "race": "12"
+      },
+      {
+        "driver": "Ricciardo",
+        "qualifying": "4",
+        "race": "5"
+      },
+      {
+        "driver": "Perez",
+        "qualifying": "18",
+        "race": "7"
+      },
+      {
+        "driver": "Hulkenberg",
+        "qualifying": "7",
+        "race": "9"
+      },
+      {
+        "driver": "Alonso",
+        "qualifying": "15",
+        "race": "14"
+      },
+      {
+        "driver": "Ocon",
+        "qualifying": "14",
+        "race": "10"
+      },
+      {
+        "driver": "Ericsson",
+        "qualifying": "19",
+        "race": "0"
+      },
+      {
+        "driver": "Wehrlein",
+        "qualifying": "13",
+        "race": "11"
+      },
+      {
+        "driver": "Magnussen",
+        "qualifying": "20",
+        "race": "0"
+      },
+      {
+        "driver": "Vandoorne",
+        "qualifying": "17",
+        "race": "0"
+      },
+      {
+        "driver": "Stroll",
+        "qualifying": "12",
+        "race": "0"
+      },
+      {
+        "driver": "Palmer",
+        "qualifying": "10",
+        "race": "13"
+      }
+    ]
   }
 ]
