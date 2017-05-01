@@ -313,5 +313,110 @@
         "race": "13"
       }
     ]
+  },
+  {
+    "location": "Russia",
+    "results": [
+      {
+        "driver": "Hamilton",
+        "qualifying": "4",
+        "race": "4"
+      },
+      {
+        "driver": "Vettel",
+        "qualifying": "1",
+        "race": "2"
+      },
+      {
+        "driver": "Bottas",
+        "qualifying": "3",
+        "race": "1"
+      },
+      {
+        "driver": "Raikkonen",
+        "qualifying": "2",
+        "race": "3"
+      },
+      {
+        "driver": "Verstappen",
+        "qualifying": "7",
+        "race": "5"
+      },
+      {
+        "driver": "Grosjean",
+        "qualifying": "20",
+        "race": "0"
+      },
+      {
+        "driver": "Massa",
+        "qualifying": "6",
+        "race": "9"
+      },
+      {
+        "driver": "Sainz",
+        "qualifying": "11",
+        "race": "10"
+      },
+      {
+        "driver": "Kvyat",
+        "qualifying": "13",
+        "race": "12"
+      },
+      {
+        "driver": "Ricciardo",
+        "qualifying": "5",
+        "race": "0"
+      },
+      {
+        "driver": "Perez",
+        "qualifying": "9",
+        "race": "6"
+      },
+      {
+        "driver": "Hulkenberg",
+        "qualifying": "8",
+        "race": "8"
+      },
+      {
+        "driver": "Alonso",
+        "qualifying": "15",
+        "race": "0"
+      },
+      {
+        "driver": "Ocon",
+        "qualifying": "10",
+        "race": "7"
+      },
+      {
+        "driver": "Ericsson",
+        "qualifying": "19",
+        "race": "15"
+      },
+      {
+        "driver": "Wehrlein",
+        "qualifying": "18",
+        "race": "16"
+      },
+      {
+        "driver": "Magnussen",
+        "qualifying": "14",
+        "race": "13"
+      },
+      {
+        "driver": "Vandoorne",
+        "qualifying": "17",
+        "race": "14"
+      },
+      {
+        "driver": "Stroll",
+        "qualifying": "12",
+        "race": "11"
+      },
+      {
+        "driver": "Palmer",
+        "qualifying": "16",
+        "race": "0"
+      }
+    ]
   }
 ]
