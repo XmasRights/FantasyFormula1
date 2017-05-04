@@ -10,12 +10,26 @@ import Foundation
 
 struct Print
 {
-    static func scores(forDriver driver: [Driver], usingScoring scores: Scoring)
+    static func scores(forDrivers drivers: [Driver], usingScoring scores: Scoring)
     {
         for driver in drivers.sorted(by: { scores.getScore(forDriver: $0) > scores.getScore(forDriver: $1) })
         {
             let score = scores.getScore(forDriver: driver)
             print ("\(score) -> \(driver)")
+        }
+    }
+    
+    static func scores(forDrivers drivers: [Driver], usingScoring scores: [Scoring])
+    {
+        let score = { (driver: Driver) -> Int in
+            var output = 0;
+            for raceScore in scores { output += raceScore.getScore (forDriver: driver) }
+            return output
+        }
+        
+        for driver in drivers.sorted(by: { score($0) > score($1) })
+        {
+            print("\(score(driver)) -> \(driver)")
         }
     }
     

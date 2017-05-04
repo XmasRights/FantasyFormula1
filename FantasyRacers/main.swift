@@ -18,15 +18,14 @@ let teams   = data.getTeamData()
 let drivers = data.getDriverData()
 let results = data.getRaceData()
 
-//let australia = Scoring(race: .Australia, allResults: results, allDrivers: drivers, allTeams: teams)
-let china  = Scoring(race: .China, allResults: results, allDrivers: drivers, allTeams: teams)
+let australia = Scoring(race: .Russia,  allResults: results, allDrivers: drivers, allTeams: teams)
+let china     = Scoring(race: .China,   allResults: results, allDrivers: drivers, allTeams: teams)
+let bahrain   = Scoring(race: .Bahrain, allResults: results, allDrivers: drivers, allTeams: teams)
+let russia    = Scoring(race: .Russia,  allResults: results, allDrivers: drivers, allTeams: teams)
+
 
 let simulator = Simulator(drivers: drivers, teams: teams)
-let entries   = simulator.getEntries(usingFilter: { $0.price <= 75 && $0.getScore(scoreing: china) > 100 })
+let entries   = simulator.getEntries(usingFilter: { $0.price <= 75 && $0.price >= 72 })
 
-
-Print.scores(forDriver: drivers, usingScoring: china)
-print("")
-Print.scores(forTeams: teams, usingScoring: china)
-print("")
-Print.scores(forEntries: entries, usingScoring: china)
+//Print.scores(forEntries: entries, usingRaceScores: [australia, china, bahrain, russia])
+Print.scores(forDrivers: drivers, usingScoring: [australia, china, bahrain, russia])
