@@ -36,6 +36,9 @@
 		4B9E3BEE1E93908C00CF838E /* Scoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scoring.swift; sourceTree = "<group>"; };
 		4BAB15781E8BCF9F004B97EE /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		4BC680AE1E93F7AE0046D035 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		4BD671471EBEA7110013CD37 /* Drivers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Drivers.json; path = Data/Drivers.json; sourceTree = SOURCE_ROOT; };
+		4BD671481EBEA7110013CD37 /* Results.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Results.json; path = Data/Results.json; sourceTree = SOURCE_ROOT; };
+		4BD671491EBEA7110013CD37 /* Teams.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Teams.json; path = Data/Teams.json; sourceTree = SOURCE_ROOT; };
 		4BE128441E945EA600906E4F /* Simulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simulator.swift; sourceTree = "<group>"; };
 		4BE128461E94671700906E4F /* Printers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Printers.swift; sourceTree = "<group>"; };
 		4BF3E46A1E93FC2A00E3F49C /* FantasyEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FantasyEntry.swift; sourceTree = "<group>"; };
@@ -58,6 +61,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BD671431EBEA6D50013CD37 /* Data JSONS */ = {
+			isa = PBXGroup;
+			children = (
+				4BD671471EBEA7110013CD37 /* Drivers.json */,
+				4BD671481EBEA7110013CD37 /* Results.json */,
+				4BD671491EBEA7110013CD37 /* Teams.json */,
+			);
+			name = "Data JSONS";
+			sourceTree = "<group>";
+		};
 		4BE128431E945D6300906E4F /* Data Processing */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +100,7 @@
 		6A0774E71D0C61170047A59F /* FantasyRacers */ = {
 			isa = PBXGroup;
 			children = (
+				4BD671431EBEA6D50013CD37 /* Data JSONS */,
 				4BE128431E945D6300906E4F /* Data Processing */,
 				6A0774F81D0C643A0047A59F /* Data Parsing */,
 				6A0774F51D0C624E0047A59F /* Models */,
