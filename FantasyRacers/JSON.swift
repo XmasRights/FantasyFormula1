@@ -8,18 +8,23 @@
 
 import Foundation
 
+enum JSONDecoderError : Error
+{
+    case InvalidJSON
+    case MissingKey(String)
+}
+
 struct JSONDecoder
 {
-    static func parse<T>(jsonString: String, withFormatter formatter: (AnyObject) -> [T]) -> [T]
+    static func parse<T>(jsonString: String, withFormatter formatter: (AnyObject) throws -> [T]) throws -> [T]
     {
         let data = jsonString.data(using: String.Encoding.utf8)
 
-        if let json = try? JSONSerialization.jsonObject(with: data!) as AnyObject
-        {
-            return formatter (json)
-        }
-        print ("Could not decode JSON")
-        return []
+        guard let json = try? JSONSerialization.jsonObject(with: data!) as AnyObject
+            else { throw JSONDecoderError.InvalidJSON }
+        
+        do    { return try formatter (json) }
+        catch { throw error }
     }
 }
 
@@ -42,7 +47,7 @@ struct Formatters
                   let price    = Int(priceStr),
                   let team     = TeamName(rawValue: teamStr),
                   let teammate = DriverName(rawValue: teammateStr) else { continue }
-
+            
             let driver = Driver(name: name,
                                 price: price,
                                 team: team,

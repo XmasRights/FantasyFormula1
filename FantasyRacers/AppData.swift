@@ -8,60 +8,62 @@
 
 import Foundation
 
+enum AppDataError : Error
+{
+    case DriverDataError
+    case RaceDataError
+    case TeamDataError
+}
+
 struct AppData
 {
-    init(commandLineArguments: [String])
+    static func getDriverData() throws -> [Driver]
     {
-        arguments = commandLineArguments
-    }
-
-    func getDriverData() -> [Driver]
-    {
-        let contents = getJSONContents(atIndex: 1)
-        return JSONDecoder.parse(jsonString: contents, withFormatter: Formatters.driverDataFormatter)
-    }
-
-    func getRaceData() -> [RaceResult]
-    {
-        let contents = getJSONContents(atIndex: 2)
-        return JSONDecoder.parse(jsonString: contents, withFormatter: Formatters.raceResultFormatter)
-    }
-
-    func getTeamData() -> [Team]
-    {
-        let contents = getJSONContents(atIndex: 3)
-        return JSONDecoder.parse(jsonString: contents, withFormatter: Formatters.teamDataFormatter)
-    }
-
-    private func getJSONContents (atIndex index: Int) -> String
-    {
-        let arg = getFormattedArgument(atIndex: index)
-        return getContents(ofFile: arg)
+        guard let contents = driverJSON() else { throw AppDataError.DriverDataError }
+        do { return try JSONDecoder.parse(jsonString: contents, withFormatter: Formatters.driverDataFormatter) }
+        catch { throw error }
     }
     
-    private func getContents (ofFile file: String) -> String
+    static func getRaceData() throws -> [RaceResult]
     {
-        do
+        guard let contents = resultsJSON() else { throw AppDataError.RaceDataError }
+        do { return try JSONDecoder.parse(jsonString: contents, withFormatter: Formatters.raceResultFormatter) }
+        catch { throw error }
+    }
+    
+    static func getTeamData() throws -> [Team]
+    {
+        guard let contents = teamJSON() else { throw AppDataError.TeamDataError }
+        do { return try JSONDecoder.parse(jsonString: contents, withFormatter: Formatters.teamDataFormatter) }
+        catch { throw error }
+    }
+    
+    static private func dataDirectory() -> URL?
+    {
+        // Modify this to specify wherever you keep your JSON
+        
+        if #available(OSX 10.12, *)
         {
-            let contents = try String(contentsOfFile: file, encoding: String.Encoding.utf8)
-            return contents
+            let home = FileManager.default.homeDirectoryForCurrentUser
+            
+            return home.appendingPathComponent("Code")
+                .appendingPathComponent("FantasyFormula1")
+                .appendingPathComponent("Data")
+        } else {
+            print ("Please run this on macOS 10.12 or later")
         }
-        catch { print ("Could not read the data file") }
-        return String();
+        
+        return nil
     }
-
-    private func getFormattedArgument(atIndex index: Int) -> String
+    
+    static private func driverJSON()  -> String? { return json(withFilename: "Drivers")  }
+    static private func resultsJSON() -> String? { return json(withFilename: "Results") }
+    static private func teamJSON()    -> String? { return json(withFilename: "Teams")   }
+    
+    static private func json(withFilename name: String) -> String?
     {
-        let filenameWithTilde = CommandLine.arguments[index]
-        let filename = NSString(string: filenameWithTilde).expandingTildeInPath
-
-        return filename
+        guard let data = dataDirectory() else { return nil }
+        let file = data.appendingPathComponent(name + ".json")
+        return try? String(contentsOf: file)
     }
-
-    private static func getContents(file: String) throws -> String
-    {
-        return try String(contentsOfFile: file, encoding: String.Encoding.utf8)
-    }
-
-    private let arguments: [String]
 }
