@@ -18,19 +18,37 @@ struct AppData
     func getDriverData() -> [Driver]
     {
         let contents = getJSONContents(atIndex: 1)
-        return JSONDecoder.parse(jsonString: contents, withFormatter: Formatters.driverDataFormatter)
+        do
+        {
+            return try JSONDecoder.parse(jsonString: contents, withFormatter: Formatters.driverDataFormatter)
+        }
+        catch { /* TODO */ }
+
+        return []
     }
 
     func getRaceData() -> [RaceResult]
     {
         let contents = getJSONContents(atIndex: 2)
-        return JSONDecoder.parse(jsonString: contents, withFormatter: Formatters.raceResultFormatter)
+        do
+        {
+            return try JSONDecoder.parse(jsonString: contents, withFormatter: Formatters.raceResultFormatter)
+        }
+        catch { /* TODO */ }
+
+        return []
     }
 
     func getTeamData() -> [Team]
     {
         let contents = getJSONContents(atIndex: 3)
-        return JSONDecoder.parse(jsonString: contents, withFormatter: Formatters.teamDataFormatter)
+        do
+        {
+            return try JSONDecoder.parse(jsonString: contents, withFormatter: Formatters.teamDataFormatter)
+        }
+        catch { /* TODO */ }
+
+        return []
     }
 
     private func getJSONContents (atIndex index: Int) -> String

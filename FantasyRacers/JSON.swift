@@ -8,24 +8,36 @@
 
 import Foundation
 
+enum JSONDecoderError : Error
+{
+    case InvalidJSONObject
+    case MissingKey(String)
+}
+
 struct JSONDecoder
 {
-    static func parse<T>(jsonString: String, withFormatter formatter: (AnyObject) -> [T]) -> [T]
+    static func parse<T>(jsonString: String, withFormatter formatter: (AnyObject) throws -> [T]) throws -> [T]
     {
         let data = jsonString.data(using: String.Encoding.utf8)
 
-        if let json = try? JSONSerialization.jsonObject(with: data!) as AnyObject
+        do
         {
-            return formatter (json)
+            let json   = try JSONSerialization.jsonObject(with: data!) as AnyObject
+            let output = try formatter (json)
+            return output
         }
-        print ("Could not decode JSON")
-        return []
+        catch { throw error }
     }
+}
+
+enum FormatterError : Error
+{
+    case MissingKey(String, String)
 }
 
 struct Formatters
 {
-    static func driverDataFormatter (jsonArray: AnyObject) -> [Driver]
+    static func driverDataFormatter (jsonArray: AnyObject) throws -> [Driver]
     {
         var output = [Driver]()
 
@@ -33,8 +45,8 @@ struct Formatters
         {
             guard let driverJson = entry["driver"] as AnyObject? else { continue }
 
-            guard let nameStr     = driverJson["name"]     as? String,
-                  let priceStr    = driverJson["price"]    as? String,
+            guard let nameStr     = driverJson["name"]     as? String else { throw FormatterError.MissingKey ("Driver", "Name") }
+            guard let priceStr    = driverJson["price"]    as? String,
                   let teamStr     = driverJson["team"]     as? String,
                   let teammateStr = driverJson["teammate"] as? String else { continue }
 
@@ -53,14 +65,14 @@ struct Formatters
         return output
     }
 
-    static func teamDataFormatter (jsonArray: AnyObject) -> [Team]
+    static func teamDataFormatter (jsonArray: AnyObject) throws -> [Team]
     {
         var output = [Team]()
 
         for entry in jsonArray as! [AnyObject]
         {
             guard let teamnameStr = entry["Team"]  as? String,
-                  let price    = entry["Price"] as? Int     else { continue }
+                  let price       = entry["Price"] as? Int     else { continue }
 
             guard let teamname = TeamName(rawValue: teamnameStr) else { continue }
 
@@ -70,7 +82,7 @@ struct Formatters
         return output
     }
 
-    static func raceResultFormatter (jsonArray: AnyObject) -> [RaceResult]
+    static func raceResultFormatter (jsonArray: AnyObject) throws -> [RaceResult]
     {
         var output = [RaceResult]()
 
