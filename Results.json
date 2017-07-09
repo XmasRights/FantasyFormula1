@@ -49,32 +49,32 @@
       },
       {
         "driver": "Ricciardo",
-        "qualifying": "15",
+        "qualifying": "10",
         "race": "0"
       },
       {
         "driver": "Perez",
-        "qualifying": "10",
+        "qualifying": "11",
         "race": "7"
       },
       {
         "driver": "Hulkenberg",
-        "qualifying": "11",
+        "qualifying": "12",
         "race": "11"
       },
       {
         "driver": "Alonso",
-        "qualifying": "12",
+        "qualifying": "13",
         "race": "0"
       },
       {
         "driver": "Ocon",
-        "qualifying": "13",
+        "qualifying": "14",
         "race": "10"
       },
       {
         "driver": "Ericsson",
-        "qualifying": "14",
+        "qualifying": "15",
         "race": "0"
       },
       {
@@ -94,12 +94,12 @@
       },
       {
         "driver": "Stroll",
-        "qualifying": "20",
+        "qualifying": "19",
         "race": "0"
       },
       {
         "driver": "Palmer",
-        "qualifying": "19",
+        "qualifying": "20",
         "race": "0"
       }
     ]
