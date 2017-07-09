@@ -11,7 +11,7 @@ import Foundation
 enum Location: String
 {
     case Australia, China, Bahrain, Russia, Spain, Monaco, Canada, Azerbaijan
-    case Austra, Britain, Hungary, Belgium, Italy, Singapore, Malaysia, Japan
+    case Austria, Britain, Hungary, Belgium, Italy, Singapore, Malaysia, Japan
     case USA, Mexico, Brazil, AbuDhabi
 }
 
