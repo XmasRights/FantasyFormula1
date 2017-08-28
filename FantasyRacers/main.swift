@@ -25,12 +25,15 @@ let results = data.getRaceData()
 //let monaco    = Scoring(race: .Monaco,  allResults: results, allDrivers: drivers, allTeams: teams)
 //let canada      = Scoring(race: .Canada,     allResults: results, allDrivers: drivers, allTeams: teams)
 //let azerbaijan  = Scoring(race: .Azerbaijan, allResults: results, allDrivers: drivers, allTeams: teams)
-let austria     = Scoring(race: .Austria,     allResults: results, allDrivers: drivers, allTeams: teams)
-
+let austria = Scoring(race: .Austria,     allResults: results, allDrivers: drivers, allTeams: teams)
+let britain = Scoring(race: .Britain, allResults: results, allDrivers: drivers, allTeams: teams)
+let hungary = Scoring(race: .Hungary,   allResults: results, allDrivers: drivers, allTeams: teams)
+let belgium = Scoring(race: .Belgium, allResults: results, allDrivers: drivers, allTeams: teams)
 
 let simulator = Simulator(drivers: drivers, teams: teams)
 let entries   = simulator.getEntries(usingFilter: { $0.price <= 75 && $0.price >= 72 })
 
-Print.scores(forTeams: teams, usingScoring: austria)
-Print.scores(forEntries: entries, usingRaceScores: [austria])
+//Print.scores(forTeams: teams, usingScoring: belgium)
+//Print.scores(forDrivers: drivers, usingScoring: [belgium])
+Print.scores(forEntries: entries, usingRaceScores: [austria, britain, hungary, belgium])
 

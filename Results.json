@@ -943,5 +943,320 @@
         "race": "11"
       }
     ]
+  },
+  {
+    "location": "Britain",
+    "results": [
+      {
+        "driver": "Hamilton",
+        "qualifying": "1",
+        "race": "1"
+      },
+      {
+        "driver": "Vettel",
+        "qualifying": "3",
+        "race": "7"
+      },
+      {
+        "driver": "Bottas",
+        "qualifying": "4",
+        "race": "2"
+      },
+      {
+        "driver": "Raikkonen",
+        "qualifying": "2",
+        "race": "3"
+      },
+      {
+        "driver": "Verstappen",
+        "qualifying": "5",
+        "race": "4"
+      },
+      {
+        "driver": "Grosjean",
+        "qualifying": "10",
+        "race": "13"
+      },
+      {
+        "driver": "Massa",
+        "qualifying": "15",
+        "race": "10"
+      },
+      {
+        "driver": "Sainz",
+        "qualifying": "14",
+        "race": "0"
+      },
+      {
+        "driver": "Kvyat",
+        "qualifying": "12",
+        "race": "15"
+      },
+      {
+        "driver": "Ricciardo",
+        "qualifying": "20",
+        "race": "5"
+      },
+      {
+        "driver": "Perez",
+        "qualifying": "7",
+        "race": "9"
+      },
+      {
+        "driver": "Hulkenberg",
+        "qualifying": "6",
+        "race": "6"
+      },
+      {
+        "driver": "Alonso",
+        "qualifying": "13",
+        "race": "0"
+      },
+      {
+        "driver": "Ocon",
+        "qualifying": "8",
+        "race": "8"
+      },
+      {
+        "driver": "Ericsson",
+        "qualifying": "19",
+        "race": "14"
+      },
+      {
+        "driver": "Wehrlein",
+        "qualifying": "18",
+        "race": "17"
+      },
+      {
+        "driver": "Magnussen",
+        "qualifying": "17",
+        "race": "12"
+      },
+      {
+        "driver": "Vandoorne",
+        "qualifying": "9",
+        "race": "11"
+      },
+      {
+        "driver": "Stroll",
+        "qualifying": "16",
+        "race": "16"
+      },
+      {
+        "driver": "Palmer",
+        "qualifying": "11",
+        "race": "0"
+      }
+    ]
+  },
+  {
+    "location": "Hungary",
+    "results": [
+      {
+        "driver": "Hamilton",
+        "qualifying": "4",
+        "race": "4"
+      },
+      {
+        "driver": "Vettel",
+        "qualifying": "1",
+        "race": "1"
+      },
+      {
+        "driver": "Bottas",
+        "qualifying": "3",
+        "race": "3"
+      },
+      {
+        "driver": "Raikkonen",
+        "qualifying": "2",
+        "race": "2"
+      },
+      {
+        "driver": "Verstappen",
+        "qualifying": "5",
+        "race": "5"
+      },
+      {
+        "driver": "Grosjean",
+        "qualifying": "15",
+        "race": "0"
+      },
+      {
+        "driver": "Massa",
+        "qualifying": "15",
+        "race": "0"
+      },
+      {
+        "driver": "Sainz",
+        "qualifying": "19",
+        "race": "7"
+      },
+      {
+        "driver": "Kvyat",
+        "qualifying": "13",
+        "race": "11"
+      },
+      {
+        "driver": "Ricciardo",
+        "qualifying": "6",
+        "race": "0"
+      },
+      {
+        "driver": "Perez",
+        "qualifying": "14",
+        "race": "8"
+      },
+      {
+        "driver": "Hulkenberg",
+        "qualifying": "7",
+        "race": "17"
+      },
+      {
+        "driver": "Alonso",
+        "qualifying": "8",
+        "race": "6"
+      },
+      {
+        "driver": "Ocon",
+        "qualifying": "12",
+        "race": "9"
+      },
+      {
+        "driver": "Ericsson",
+        "qualifying": "20",
+        "race": "16"
+      },
+      {
+        "driver": "Wehrlein",
+        "qualifying": "18",
+        "race": "15"
+      },
+      {
+        "driver": "Magnussen",
+        "qualifying": "16",
+        "race": "13"
+      },
+      {
+        "driver": "Vandoorne",
+        "qualifying": "9",
+        "race": "10"
+      },
+      {
+        "driver": "Stroll",
+        "qualifying": "17",
+        "race": "14"
+      },
+      {
+        "driver": "Palmer",
+        "qualifying": "11",
+        "race": "12"
+      }
+    ]
+  },
+  {
+    "location": "Belgium",
+    "results": [
+      {
+        "driver": "Hamilton",
+        "qualifying": "1",
+        "race": "1"
+      },
+      {
+        "driver": "Vettel",
+        "qualifying": "2",
+        "race": "2"
+      },
+      {
+        "driver": "Bottas",
+        "qualifying": "3",
+        "race": "5"
+      },
+      {
+        "driver": "Raikkonen",
+        "qualifying": "4",
+        "race": "4"
+      },
+      {
+        "driver": "Verstappen",
+        "qualifying": "5",
+        "race": "0"
+      },
+      {
+        "driver": "Grosjean",
+        "qualifying": "12",
+        "race": "7"
+      },
+      {
+        "driver": "Massa",
+        "qualifying": "16",
+        "race": "8"
+      },
+      {
+        "driver": "Sainz",
+        "qualifying": "14",
+        "race": "10"
+      },
+      {
+        "driver": "Kvyat",
+        "qualifying": "17",
+        "race": "12"
+      },
+      {
+        "driver": "Ricciardo",
+        "qualifying": "6",
+        "race": "3"
+      },
+      {
+        "driver": "Perez",
+        "qualifying": "8",
+        "race": "17"
+      },
+      {
+        "driver": "Hulkenberg",
+        "qualifying": "7",
+        "race": "6"
+      },
+      {
+        "driver": "Alonso",
+        "qualifying": "11",
+        "race": "0"
+      },
+      {
+        "driver": "Ocon",
+        "qualifying": "9",
+        "race": "9"
+      },
+      {
+        "driver": "Ericsson",
+        "qualifying": "19",
+        "race": "16"
+      },
+      {
+        "driver": "Wehrlein",
+        "qualifying": "20",
+        "race": "0"
+      },
+      {
+        "driver": "Magnussen",
+        "qualifying": "13",
+        "race": "15"
+      },
+      {
+        "driver": "Vandoorne",
+        "qualifying": "15",
+        "race": "14"
+      },
+      {
+        "driver": "Stroll",
+        "qualifying": "18",
+        "race": "11"
+      },
+      {
+        "driver": "Palmer",
+        "qualifying": "10",
+        "race": "13"
+      }
+    ]
   }
 ]
