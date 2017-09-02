@@ -85,7 +85,7 @@ struct Scoring
         score += finishingPoints             (forDriver: driver, usingResult:  driverResult)
         score += polePositionPoints          (forDriver: driver, usingResult:  driverResult)
         score += outqualifyingTeammatePoints (forDriver: driver, usingResults: results)
-        score += gainedPositionPoints        (forDriver: driver, usingResult:  driverResult)
+        score += pointsForGainedPositions    (for: driver, in: driverResult)
         
         driverScores[driver.name] = score
     }
@@ -171,29 +171,15 @@ struct Scoring
         }
     }
     
-    private func gainedPositionPoints(forDriver driver: Driver, usingResult result: RaceResult) -> Int
+    private func pointsForGainedPositions(for driver: Driver, in race: RaceResult) -> Int
     {
-        switch result.qulifyingPosition
+        switch (race.qulifyingPosition, race.racePosition)
         {
-            case .Finished(let qualiPos):
-                switch result.racePosition
-                {
-                    case .Finished(let racePos):
-                        if (racePos < qualiPos)
-                        {
-                            return (qualiPos - racePos) * 3
-                        }
-                        else
-                        {
-                            return 0
-                        }
-                        
-                    case .DNF:
-                        return 0
-                }
-            case .DNF:
+            case (.Finished(let quali), .Finished(let result)):
+                return (result < quali) ? (quali - result) * 3 : 0
+
+            default:
                 return 0
         }
     }
-
 }

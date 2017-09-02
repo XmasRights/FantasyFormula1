@@ -2,13 +2,43 @@
 //  AppData.swift
 //  FantasyRacers
 //
-//  Created by Christopher Fonseka on 11/06/2016.
+//  Created by Christopher Fonseka on 02/09/2017.
 //  Copyright © 2017 Christopher Fonseka. All rights reserved.
 //
 
 import Foundation
 
-struct AppData
+class DataService
+{
+    static let shared = DataService()
+    
+    lazy var driverData: [Driver] = {
+        return DataFileReader.driverData() ?? []
+    }()
+    
+    lazy var raceData: [RaceResult] = {
+        return DataFileReader.raceData() ?? []
+    }()
+    
+    lazy var teamData: [Team] = {
+        return DataFileReader.teamData() ?? []
+    }()
+    
+    func driversIn(team: Team) -> [Driver]
+    {
+        return driversIn(team: team.name)
+    }
+    
+    func driversIn(team: TeamName) -> [Driver]
+    {
+        return driverData.filter { $0.team == team }
+    }
+    
+    private init()
+    {}
+}
+
+fileprivate struct DataFileReader
 {
     static func driverData() -> [Driver]?
     {

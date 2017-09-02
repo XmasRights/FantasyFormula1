@@ -16,7 +16,7 @@
 		4B38B1131F5ACAA3006277B8 /* Drivers.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B38B1101F5ACAA3006277B8 /* Drivers.json */; };
 		4B38B1141F5ACAA3006277B8 /* Results.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B38B1111F5ACAA3006277B8 /* Results.json */; };
 		4B38B1151F5ACAA3006277B8 /* Teams.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B38B1121F5ACAA3006277B8 /* Teams.json */; };
-		4B38B1171F5ACAC4006277B8 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B38B1161F5ACAC4006277B8 /* AppData.swift */; };
+		4B38B1171F5ACAC4006277B8 /* DataFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B38B1161F5ACAC4006277B8 /* DataFileReader.swift */; };
 		4B38B11D1F5ACAE8006277B8 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B38B1191F5ACAE8006277B8 /* Driver.swift */; };
 		4B38B11E1F5ACAE8006277B8 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B38B11A1F5ACAE8006277B8 /* Race.swift */; };
 		4B38B11F1F5ACAE8006277B8 /* Scoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B38B11B1F5ACAE8006277B8 /* Scoring.swift */; };
@@ -25,6 +25,7 @@
 		4B38B1251F5ACB0E006277B8 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B38B1241F5ACB0E006277B8 /* Entry.swift */; };
 		4B38B1281F5ACB20006277B8 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B38B1271F5ACB20006277B8 /* JSON.swift */; };
 		4B38B12B1F5ACB37006277B8 /* Simulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B38B12A1F5ACB37006277B8 /* Simulator.swift */; };
+		4B853A4D1F5B3BEE004897BE /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B853A4C1F5B3BEE004897BE /* AppData.swift */; };
 		4B95A85B1F5ACDF300BA33EA /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B95A85A1F5ACDF300BA33EA /* AppMain.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +62,7 @@
 		4B38B1101F5ACAA3006277B8 /* Drivers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Drivers.json; sourceTree = "<group>"; };
 		4B38B1111F5ACAA3006277B8 /* Results.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Results.json; sourceTree = "<group>"; };
 		4B38B1121F5ACAA3006277B8 /* Teams.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Teams.json; sourceTree = "<group>"; };
-		4B38B1161F5ACAC4006277B8 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		4B38B1161F5ACAC4006277B8 /* DataFileReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFileReader.swift; sourceTree = "<group>"; };
 		4B38B1191F5ACAE8006277B8 /* Driver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
 		4B38B11A1F5ACAE8006277B8 /* Race.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
 		4B38B11B1F5ACAE8006277B8 /* Scoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scoring.swift; sourceTree = "<group>"; };
@@ -70,6 +71,7 @@
 		4B38B1241F5ACB0E006277B8 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		4B38B1271F5ACB20006277B8 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		4B38B12A1F5ACB37006277B8 /* Simulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simulator.swift; sourceTree = "<group>"; };
+		4B853A4C1F5B3BEE004897BE /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		4B95A85A1F5ACDF300BA33EA /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +127,7 @@
 				4B38B1261F5ACB18006277B8 /* JSON */,
 				4B38B1211F5ACAF9006277B8 /* Extensions */,
 				4B38B1181F5ACAD7006277B8 /* Models */,
+				4B95A85C1F5AD2EE00BA33EA /* Scoring */,
 				4B38B10F1F5ACA97006277B8 /* App Data */,
 				4B38B0E41F5AC963006277B8 /* AppDelegate.swift */,
 				4B95A85A1F5ACDF300BA33EA /* AppMain.swift */,
@@ -157,7 +160,8 @@
 		4B38B10F1F5ACA97006277B8 /* App Data */ = {
 			isa = PBXGroup;
 			children = (
-				4B38B1161F5ACAC4006277B8 /* AppData.swift */,
+				4B853A4C1F5B3BEE004897BE /* AppData.swift */,
+				4B38B1161F5ACAC4006277B8 /* DataFileReader.swift */,
 				4B38B1101F5ACAA3006277B8 /* Drivers.json */,
 				4B38B1111F5ACAA3006277B8 /* Results.json */,
 				4B38B1121F5ACAA3006277B8 /* Teams.json */,
@@ -171,7 +175,6 @@
 				4B38B1241F5ACB0E006277B8 /* Entry.swift */,
 				4B38B1191F5ACAE8006277B8 /* Driver.swift */,
 				4B38B11A1F5ACAE8006277B8 /* Race.swift */,
-				4B38B11B1F5ACAE8006277B8 /* Scoring.swift */,
 				4B38B11C1F5ACAE8006277B8 /* Team.swift */,
 			);
 			name = Models;
@@ -199,6 +202,14 @@
 				4B38B12A1F5ACB37006277B8 /* Simulator.swift */,
 			);
 			name = Simulator;
+			sourceTree = "<group>";
+		};
+		4B95A85C1F5AD2EE00BA33EA /* Scoring */ = {
+			isa = PBXGroup;
+			children = (
+				4B38B11B1F5ACAE8006277B8 /* Scoring.swift */,
+			);
+			name = Scoring;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B853A4D1F5B3BEE004897BE /* AppData.swift in Sources */,
 				4B38B12B1F5ACB37006277B8 /* Simulator.swift in Sources */,
 				4B38B0E71F5AC963006277B8 /* ViewController.swift in Sources */,
 				4B38B1281F5ACB20006277B8 /* JSON.swift in Sources */,
@@ -347,7 +359,7 @@
 				4B38B1201F5ACAE8006277B8 /* Team.swift in Sources */,
 				4B38B1251F5ACB0E006277B8 /* Entry.swift in Sources */,
 				4B38B1231F5ACB02006277B8 /* Extensions.swift in Sources */,
-				4B38B1171F5ACAC4006277B8 /* AppData.swift in Sources */,
+				4B38B1171F5ACAC4006277B8 /* DataFileReader.swift in Sources */,
 				4B38B11D1F5ACAE8006277B8 /* Driver.swift in Sources */,
 				4B38B11E1F5ACAE8006277B8 /* Race.swift in Sources */,
 				4B95A85B1F5ACDF300BA33EA /* AppMain.swift in Sources */,

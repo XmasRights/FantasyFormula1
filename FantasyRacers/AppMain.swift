@@ -10,10 +10,8 @@ import Foundation
 
 class AppMain
 {
-//    let data = AppData()
-    
     func run()
     {
-        AppData.test()
+        
     }
 }
