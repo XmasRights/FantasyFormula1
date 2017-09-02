@@ -136,7 +136,7 @@ struct Scoring
     
     private func polePositionPoints(forDriver driver: Driver, usingResult result: RaceResult) -> Int
     {
-        switch result.qulifyingPosition
+        switch result.qualifyingPosition
         {
             case .Finished(let position):
                 return (position == 1 ? 10 : 0)
@@ -154,10 +154,10 @@ struct Scoring
         guard let teammateResult = getResult(forDriver: driver.teammate, usingResults: results)
             else { print("No result for \(driver.teammate)"); return 0 }
         
-        switch driverResult.qulifyingPosition
+        switch driverResult.qualifyingPosition
         {
             case .Finished(let driverPosition):
-                switch teammateResult.qulifyingPosition
+                switch teammateResult.qualifyingPosition
                 {
                     case .Finished(let teammatePosition):
                         return (driverPosition < teammatePosition ? 5 : 0)
@@ -173,7 +173,7 @@ struct Scoring
     
     private func pointsForGainedPositions(for driver: Driver, in race: RaceResult) -> Int
     {
-        switch (race.qulifyingPosition, race.racePosition)
+        switch (race.qualifyingPosition, race.racePosition)
         {
             case (.Finished(let quali), .Finished(let result)):
                 return (result < quali) ? (quali - result) * 3 : 0

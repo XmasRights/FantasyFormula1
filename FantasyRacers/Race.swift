@@ -31,7 +31,21 @@ struct RaceResult
 {
     let driver: DriverName
     let location: Location
-    let qulifyingPosition: Position
+    let qualifyingPosition: Position
     let racePosition: Position
 }
 
+extension RaceResult
+{
+    init?(driver: DriverName, location: Location)
+    {
+        let data = DataService.shared
+        guard let race = data.raceData.filter({ $0.location == location && $0.driver == driver }).first
+            else { return nil }
+        
+        self.driver             = race.driver
+        self.location           = race.location
+        self.qualifyingPosition = race.qualifyingPosition
+        self.racePosition       = race.racePosition
+    }
+}

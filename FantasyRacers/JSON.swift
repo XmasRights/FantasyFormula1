@@ -93,7 +93,7 @@ struct Formatters
                 let quali    = Position(value: qualiUNF);
                 let race     = Position(value: raceUNF);
 
-                let raceResult = RaceResult(driver: driver, location:location, qulifyingPosition: quali, racePosition: race)
+                let raceResult = RaceResult(driver: driver, location:location, qualifyingPosition: quali, racePosition: race)
                 output.append(raceResult)
             }
         }

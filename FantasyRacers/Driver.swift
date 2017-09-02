@@ -40,6 +40,21 @@ struct Driver
     let teammate: DriverName
 }
 
+extension Driver
+{
+    init?(name: DriverName)
+    {
+        let data = DataService.shared
+        guard let driver = data.driverData.filter({ $0.name == name }).first
+            else { return nil }
+        
+        self.name     = driver.name
+        self.price    = driver.price
+        self.team     = driver.team
+        self.teammate = driver.teammate
+    }
+}
+
 extension Driver : CustomStringConvertible
 {
     var description: String

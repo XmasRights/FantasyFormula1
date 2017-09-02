@@ -20,6 +20,19 @@ struct Team
     let price: Int
 }
 
+extension Team
+{
+    init?(name: TeamName)
+    {
+        let data = DataService.shared
+        guard let team = data.teamData.filter({ $0.name == name }).first
+            else { return nil }
+        
+        self.name  = team.name
+        self.price = team.price
+    }
+}
+
 extension Team: CustomStringConvertible
 {
     var description: String
