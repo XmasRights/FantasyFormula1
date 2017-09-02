@@ -33,6 +33,14 @@ extension Team
     }
 }
 
+extension Team: Scoreable
+{
+    func score(for location: Location) -> Int
+    {
+        return Score.score(team: self, at: location)
+    }
+}
+
 extension Team: CustomStringConvertible
 {
     var description: String

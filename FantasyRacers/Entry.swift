@@ -20,6 +20,15 @@ struct Entry
     }
 }
 
+extension Entry: Scoreable
+{
+    func score(for location: Location) -> Int
+    {
+        return drivers.reduce(0, { $0 + $1.score(for: location) })
+               + teams.reduce(0, { $0 + $1.score(for: location) })
+    }
+}
+
 extension Entry: CustomStringConvertible
 {
     var description: String

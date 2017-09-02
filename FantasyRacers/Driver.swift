@@ -55,6 +55,14 @@ extension Driver
     }
 }
 
+extension Driver: Scoreable
+{
+    func score(for location: Location) -> Int
+    {
+        return Score.score(for: self, at: location) 
+    }
+}
+
 extension Driver : CustomStringConvertible
 {
     var description: String

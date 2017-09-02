@@ -24,6 +24,7 @@
 		4B38B1281F5ACB20006277B8 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B38B1271F5ACB20006277B8 /* JSON.swift */; };
 		4B38B12B1F5ACB37006277B8 /* Simulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B38B12A1F5ACB37006277B8 /* Simulator.swift */; };
 		4B716F951F5B495C00EFDAE8 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B716F941F5B495C00EFDAE8 /* Score.swift */; };
+		4B716F971F5B5AB700EFDAE8 /* Scoreable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B716F961F5B5AB700EFDAE8 /* Scoreable.swift */; };
 		4B853A4D1F5B3BEE004897BE /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B853A4C1F5B3BEE004897BE /* DataService.swift */; };
 		4B95A85B1F5ACDF300BA33EA /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B95A85A1F5ACDF300BA33EA /* AppMain.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		4B38B1271F5ACB20006277B8 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		4B38B12A1F5ACB37006277B8 /* Simulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simulator.swift; sourceTree = "<group>"; };
 		4B716F941F5B495C00EFDAE8 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		4B716F961F5B5AB700EFDAE8 /* Scoreable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scoreable.swift; sourceTree = "<group>"; };
 		4B853A4C1F5B3BEE004897BE /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		4B95A85A1F5ACDF300BA33EA /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,10 +123,9 @@
 		4B38B0E31F5AC963006277B8 /* FantasyRacers */ = {
 			isa = PBXGroup;
 			children = (
-				4B38B1291F5ACB2E006277B8 /* Simulator */,
-				4B38B1261F5ACB18006277B8 /* JSON */,
-				4B38B1211F5ACAF9006277B8 /* Extensions */,
+				4B38B1211F5ACAF9006277B8 /* Helpers */,
 				4B38B1181F5ACAD7006277B8 /* Models */,
+				4B38B1291F5ACB2E006277B8 /* Simulator */,
 				4B95A85C1F5AD2EE00BA33EA /* Scoring */,
 				4B38B10F1F5ACA97006277B8 /* App Data */,
 				4B38B0E41F5AC963006277B8 /* AppDelegate.swift */,
@@ -177,20 +178,14 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		4B38B1211F5ACAF9006277B8 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				4B38B1221F5ACB02006277B8 /* Extensions.swift */,
-			);
-			name = Extensions;
-			sourceTree = "<group>";
-		};
-		4B38B1261F5ACB18006277B8 /* JSON */ = {
+		4B38B1211F5ACAF9006277B8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				4B38B1271F5ACB20006277B8 /* JSON.swift */,
+				4B38B1221F5ACB02006277B8 /* Extensions.swift */,
+				4B716F961F5B5AB700EFDAE8 /* Scoreable.swift */,
 			);
-			name = JSON;
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		4B38B1291F5ACB2E006277B8 /* Simulator */ = {
@@ -359,6 +354,7 @@
 				4B38B1231F5ACB02006277B8 /* Extensions.swift in Sources */,
 				4B38B11D1F5ACAE8006277B8 /* Driver.swift in Sources */,
 				4B38B11E1F5ACAE8006277B8 /* Race.swift in Sources */,
+				4B716F971F5B5AB700EFDAE8 /* Scoreable.swift in Sources */,
 				4B95A85B1F5ACDF300BA33EA /* AppMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

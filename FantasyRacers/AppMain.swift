@@ -12,6 +12,9 @@ class AppMain
 {
     func run()
     {
+        let entries = Simulator.entries(filter: { $0.price < 75 && $0.price > 70 })
+        let belgium = entries.orderedByScore(at: .Belgium)
         
+        belgium.forEach { print($0.descriptionWithScore(at: .Belgium)) }
     }
 }

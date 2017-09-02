@@ -10,7 +10,7 @@ import Foundation
 
 extension Array
 {
-    private func uniquePermutations(_ listA: [Element], listB: [Element], output: inout [[Element]], withPredicate predicate: (([Element]) -> Bool)?)
+    private func uniquePermutations(_ listA: [Element], listB: [Element], output: inout [[Element]], predicate: (([Element]) -> Bool)?)
     {
         if let unwrappedPredicate = predicate
         {
@@ -31,7 +31,7 @@ extension Array
                 var newA = listA; newA.append(element)
                 var newB = listB; newB.removeSubrange(0...index)
 
-                uniquePermutations(newA, listB: newB, output: &output, withPredicate: predicate)
+                uniquePermutations(newA, listB: newB, output: &output, predicate: predicate)
             }
         }
     }
@@ -39,14 +39,14 @@ extension Array
     func uniquePermutations() -> [[Element]]
     {
         var output = [[Element]]()
-        uniquePermutations([], listB: self, output: &output, withPredicate: nil)
+        uniquePermutations([], listB: self, output: &output, predicate: nil)
         return output
     }
 
-    func uniquePermutations(withPredicate predicate: @escaping ([Element]) -> Bool)  -> [[Element]]
+    func uniquePermutations(predicate: @escaping ([Element]) -> Bool)  -> [[Element]]
     {
         var output = [[Element]]()
-        uniquePermutations([], listB: self, output: &output, withPredicate: predicate)
+        uniquePermutations([], listB: self, output: &output, predicate: predicate)
         return output
     }
 }

@@ -10,26 +10,25 @@ import Foundation
 
 struct Simulator
 {
-    let drivers:  [Driver]
-    let teams:    [Team]
-    
-    func getEntries(usingFilter filter: (Entry) -> Bool) -> [Entry]
+    static func entries(filter: ((Entry) -> Bool)?) -> [Entry]
     {
+        let data = DataService.shared
+        
         print ("Generating Team Lineups")
-        let teamLineups = teams.uniquePermutations(withPredicate: { $0.count == 3 })
+        let teamLineups = data.teamData.uniquePermutations(predicate: { $0.count == 3 })
         print ("... found \(teamLineups.count) combinations\n")
         
         print ("Generating Driver Lineups")
-        let driverLineups = drivers.uniquePermutations(withPredicate: { $0.count == 3 })
+        let driverLineups = data.driverData.uniquePermutations(predicate: { $0.count == 3 })
         print ("... found \(driverLineups.count) combinations\n")
         
         print ("Generating Fantasy Entries")
-        let entries = product(ofTeams: teamLineups, andDrivers: driverLineups, usingFilter: filter)
+        let entries = product(teams: teamLineups, drivers: driverLineups, filter: filter)
         print ("... Finished!\n\n")
         return entries
     }
     
-    private func product(ofTeams teams: [[Team]], andDrivers drivers: [[Driver]], usingFilter filter: (Entry) -> Bool) -> [Entry]
+    private static func product(teams: [[Team]], drivers: [[Driver]], filter: ((Entry) -> Bool)?) -> [Entry]
     {
         var output = [Entry]()
         for team in teams
@@ -37,7 +36,15 @@ struct Simulator
             for driver in drivers
             {
                 let entry = Entry(drivers: driver, teams: team)
-                if (filter (entry)) { output.append(entry) }
+                
+                if let filter = filter
+                {
+                    if (filter(entry)) { output.append(entry) }
+                }
+                else
+                {
+                    output.append(entry)
+                }
             }
         }
         return output
