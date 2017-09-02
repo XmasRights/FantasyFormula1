@@ -8,10 +8,14 @@
 
 import Cocoa
 
-class ViewController: NSViewController {    
+class ViewController: NSViewController
+{
+    let main = AppMain()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        main.run()
     
     }
 

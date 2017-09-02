@@ -1,0 +1,162 @@
+[
+  {
+    "driver": {
+      "name": "Hamilton",
+      "price": "22",
+      "team": "Mercedes",
+      "teammate": "Bottas"
+    }
+  },
+  {
+    "driver": {
+      "name": "Bottas",
+      "price": "18",
+      "team": "Mercedes",
+      "teammate": "Hamilton"
+    }
+  },
+  {
+    "driver": {
+      "name": "Verstappen",
+      "price": "15",
+      "team": "RedBull",
+      "teammate": "Ricciardo"
+    }
+  },
+  {
+    "driver": {
+      "name": "Ricciardo",
+      "price": "15",
+      "team": "RedBull",
+      "teammate": "Verstappen"
+    }
+  },
+  {
+    "driver": {
+      "name": "Vettel",
+      "price": "16",
+      "team": "Ferrari",
+      "teammate": "Raikkonen"
+    }
+  },
+  {
+    "driver": {
+      "name": "Raikkonen",
+      "price": "14",
+      "team": "Ferrari",
+      "teammate": "Vettel"
+    }
+  },
+  {
+    "driver": {
+      "name": "Perez",
+      "price": "10",
+      "team": "ForceIndia",
+      "teammate": "Ocon"
+    }
+  },
+  {
+    "driver": {
+      "name": "Ocon",
+      "price": "8",
+      "team": "ForceIndia",
+      "teammate": "Perez"
+    }
+  },
+  {
+    "driver": {
+      "name": "Grosjean",
+      "price": "5",
+      "team": "Haas",
+      "teammate": "Magnussen"
+    }
+  },
+  {
+    "driver": {
+      "name": "Magnussen",
+      "price": "5",
+      "team": "Haas",
+      "teammate": "Grosjean"
+    }
+  },
+  {
+    "driver": {
+      "name": "Vandoorne",
+      "price": "7",
+      "team": "McLaren",
+      "teammate": "Alonso"
+    }
+  },
+  {
+    "driver": {
+      "name": "Alonso",
+      "price": "10",
+      "team": "McLaren",
+      "teammate": "Vandoorne"
+    }
+  },
+  {
+    "driver": {
+      "name": "Hulkenberg",
+      "price": "7",
+      "team": "Renault",
+      "teammate": "Palmer"
+    }
+  },
+  {
+    "driver": {
+      "name": "Palmer",
+      "price": "5",
+      "team": "Renault",
+      "teammate": "Hulkenberg"
+    }
+  },
+  {
+    "driver": {
+      "name": "Ericsson",
+      "price": "4",
+      "team": "Sauber",
+      "teammate": "Wehrlein"
+    }
+  },
+  {
+    "driver": {
+      "name": "Wehrlein",
+      "price": "3",
+      "team": "Sauber",
+      "teammate": "Ericsson"
+    }
+  },
+  {
+    "driver": {
+      "name": "Kvyat",
+      "price": "6",
+      "team": "ToroRosso",
+      "teammate": "Sainz"
+    }
+  },
+  {
+    "driver": {
+      "name": "Sainz",
+      "price": "6",
+      "team": "ToroRosso",
+      "teammate": "Kvyat"
+    }
+  },
+  {
+    "driver": {
+      "name": "Stroll",
+      "price": "7",
+      "team": "Williams",
+      "teammate": "Massa"
+    }
+  },
+  {
+    "driver": {
+      "name": "Massa",
+      "price": "9",
+      "team": "Williams",
+      "teammate": "Stroll"
+    }
+  }
+]
