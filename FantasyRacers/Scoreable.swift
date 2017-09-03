@@ -37,4 +37,9 @@ extension Array where Element: Scoreable
     {
         return self.sorted(by: { $0.score(for: location) > $1.score(for: location) })
     }
+    
+    func orderedByScores(at locations: [Location]) -> [Scoreable]
+    {
+        return self.sorted(by: { $0.score(for: locations) > $1.score(for: locations) })
+    }
 }

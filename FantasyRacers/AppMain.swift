@@ -26,20 +26,17 @@ class AppMain
     {
         let time = executionTime
         {
-            printAllEntries()
+            let locations: [Location] = [.Austria, .Britain, .Hungary, .Belgium]
+            
+            let entries = Simulator.entries(filter: { $0.price < 76 && $0.price > 70 })
+            
+            for entry in entries.orderedByScores(at: locations)
+            {
+                print(entry.descriptionWithScores(at: locations))
+            }
         }
         
         let seconds = time.converted(to: .seconds)
         print("That took \(seconds) seconds")
-    }
-    
-    func printAllEntries()
-    {
-        let entries = Simulator.entries(filter: {$0.price == 75})
-        
-        for entry in entries.orderedByScore(at: .Belgium)
-        {
-            print(entry.descriptionWithScore(at: .Belgium))
-        }
     }
 }
