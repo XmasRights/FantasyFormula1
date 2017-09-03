@@ -22,9 +22,6 @@ func executionTime(function: ()->()) -> Measurement<UnitDuration>
 
 class AppMain
 {
-    
-    
-    
     func run()
     {
         let time = executionTime
