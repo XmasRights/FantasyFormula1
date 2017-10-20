@@ -55,6 +55,15 @@ extension Driver
     }
 }
 
+extension Driver
+{
+    static func all() -> [Driver]
+    {
+        let data = DataService.shared
+        return data.driverData
+    }
+}
+
 extension Driver: Scoreable
 {
     func score(for location: Location) -> Int

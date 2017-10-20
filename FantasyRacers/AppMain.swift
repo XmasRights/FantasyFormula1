@@ -26,10 +26,16 @@ class AppMain
     {
         let time = executionTime
         {
-            let locations: [Location] = [.Austria, .Britain, .Hungary, .Belgium]
+            let locations: [Location] = [.Belgium, .Italy, .Singapore, .Malaysia, .Japan]
+
+            for driver in Driver.all().sorted(by: { (a, b) in a.score(for: locations) > b.score(for: locations) })
+            {
+                print(driver.descriptionWithScores(at: locations))
+            }
             
             let entries = Simulator.entries(filter: { $0.price < 76 && $0.price > 70 })
-            
+                                   .filter { $0.score(for: locations) > 500 }
+
             for entry in entries.orderedByScores(at: locations)
             {
                 print(entry.descriptionWithScores(at: locations))

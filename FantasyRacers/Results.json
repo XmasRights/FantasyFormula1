@@ -1,1262 +1,1682 @@
-[
+ [
   {
-    "location": "Australia",
-    "results": [
-      {
-        "driver": "Hamilton",
-        "qualifying": "1",
-        "race": "2"
-      },
-      {
-        "driver": "Vettel",
-        "qualifying": "2",
-        "race": "1"
-      },
-      {
-        "driver": "Bottas",
-        "qualifying": "3",
-        "race": "3"
-      },
-      {
-        "driver": "Raikkonen",
-        "qualifying": "4",
-        "race": "4"
-      },
-      {
-        "driver": "Verstappen",
-        "qualifying": "5",
-        "race": "5"
-      },
-      {
-        "driver": "Grosjean",
-        "qualifying": "6",
-        "race": "0"
-      },
-      {
-        "driver": "Massa",
-        "qualifying": "7",
-        "race": "6"
-      },
-      {
-        "driver": "Sainz",
-        "qualifying": "8",
-        "race": "8"
-      },
-      {
-        "driver": "Kvyat",
-        "qualifying": "9",
-        "race": "9"
-      },
-      {
-        "driver": "Ricciardo",
-        "qualifying": "10",
-        "race": "0"
-      },
-      {
-        "driver": "Perez",
-        "qualifying": "11",
-        "race": "7"
-      },
-      {
-        "driver": "Hulkenberg",
-        "qualifying": "12",
-        "race": "11"
-      },
-      {
-        "driver": "Alonso",
-        "qualifying": "13",
-        "race": "0"
-      },
-      {
-        "driver": "Ocon",
-        "qualifying": "14",
-        "race": "10"
-      },
-      {
-        "driver": "Ericsson",
-        "qualifying": "15",
-        "race": "0"
-      },
-      {
-        "driver": "Wehrlein",
-        "qualifying": "16",
-        "race": "12"
-      },
-      {
-        "driver": "Magnussen",
-        "qualifying": "17",
-        "race": "0"
-      },
-      {
-        "driver": "Vandoorne",
-        "qualifying": "18",
-        "race": "13"
-      },
-      {
-        "driver": "Stroll",
-        "qualifying": "19",
-        "race": "0"
-      },
-      {
-        "driver": "Palmer",
-        "qualifying": "20",
-        "race": "0"
-      }
-    ]
+  "location": "Australia",
+  "results": [
+              {
+              "driver": "Hamilton",
+              "qualifying": "1",
+              "race": "2"
+              },
+              {
+              "driver": "Vettel",
+              "qualifying": "2",
+              "race": "1"
+              },
+              {
+              "driver": "Bottas",
+              "qualifying": "3",
+              "race": "3"
+              },
+              {
+              "driver": "Raikkonen",
+              "qualifying": "4",
+              "race": "4"
+              },
+              {
+              "driver": "Verstappen",
+              "qualifying": "5",
+              "race": "5"
+              },
+              {
+              "driver": "Grosjean",
+              "qualifying": "6",
+              "race": "0"
+              },
+              {
+              "driver": "Massa",
+              "qualifying": "7",
+              "race": "6"
+              },
+              {
+              "driver": "Sainz",
+              "qualifying": "8",
+              "race": "8"
+              },
+              {
+              "driver": "Kvyat",
+              "qualifying": "9",
+              "race": "9"
+              },
+              {
+              "driver": "Ricciardo",
+              "qualifying": "10",
+              "race": "0"
+              },
+              {
+              "driver": "Perez",
+              "qualifying": "11",
+              "race": "7"
+              },
+              {
+              "driver": "Hulkenberg",
+              "qualifying": "12",
+              "race": "11"
+              },
+              {
+              "driver": "Alonso",
+              "qualifying": "13",
+              "race": "0"
+              },
+              {
+              "driver": "Ocon",
+              "qualifying": "14",
+              "race": "10"
+              },
+              {
+              "driver": "Ericsson",
+              "qualifying": "15",
+              "race": "0"
+              },
+              {
+              "driver": "Wehrlein",
+              "qualifying": "16",
+              "race": "12"
+              },
+              {
+              "driver": "Magnussen",
+              "qualifying": "17",
+              "race": "0"
+              },
+              {
+              "driver": "Vandoorne",
+              "qualifying": "18",
+              "race": "13"
+              },
+              {
+              "driver": "Stroll",
+              "qualifying": "19",
+              "race": "0"
+              },
+              {
+              "driver": "Palmer",
+              "qualifying": "20",
+              "race": "0"
+              }
+              ]
   },
   {
-    "location": "China",
-    "results": [
-      {
-        "driver": "Hamilton",
-        "qualifying": "1",
-        "race": "1"
-      },
-      {
-        "driver": "Vettel",
-        "qualifying": "2",
-        "race": "2"
-      },
-      {
-        "driver": "Bottas",
-        "qualifying": "3",
-        "race": "6"
-      },
-      {
-        "driver": "Raikkonen",
-        "qualifying": "4",
-        "race": "5"
-      },
-      {
-        "driver": "Verstappen",
-        "qualifying": "19",
-        "race": "3"
-      },
-      {
-        "driver": "Grosjean",
-        "qualifying": "17",
-        "race": "11"
-      },
-      {
-        "driver": "Massa",
-        "qualifying": "6",
-        "race": "14"
-      },
-      {
-        "driver": "Sainz",
-        "qualifying": "11",
-        "race": "7"
-      },
-      {
-        "driver": "Kvyat",
-        "qualifying": "9",
-        "race": "0"
-      },
-      {
-        "driver": "Ricciardo",
-        "qualifying": "5",
-        "race": "4"
-      },
-      {
-        "driver": "Perez",
-        "qualifying": "8",
-        "race": "9"
-      },
-      {
-        "driver": "Hulkenberg",
-        "qualifying": "7",
-        "race": "12"
-      },
-      {
-        "driver": "Alonso",
-        "qualifying": "13",
-        "race": "0"
-      },
-      {
-        "driver": "Ocon",
-        "qualifying": "20",
-        "race": "10"
-      },
-      {
-        "driver": "Ericsson",
-        "qualifying": "14",
-        "race": "15"
-      },
-      {
-        "driver": "Wehrlein",
-        "qualifying": "15",
-        "race": "0"
-      },
-      {
-        "driver": "Magnussen",
-        "qualifying": "12",
-        "race": "8"
-      },
-      {
-        "driver": "Vandoorne",
-        "qualifying": "16",
-        "race": "0"
-      },
-      {
-        "driver": "Stroll",
-        "qualifying": "10",
-        "race": "0"
-      },
-      {
-        "driver": "Palmer",
-        "qualifying": "18",
-        "race": "13"
-      }
-    ]
+  "location": "China",
+  "results": [
+              {
+              "driver": "Hamilton",
+              "qualifying": "1",
+              "race": "1"
+              },
+              {
+              "driver": "Vettel",
+              "qualifying": "2",
+              "race": "2"
+              },
+              {
+              "driver": "Bottas",
+              "qualifying": "3",
+              "race": "6"
+              },
+              {
+              "driver": "Raikkonen",
+              "qualifying": "4",
+              "race": "5"
+              },
+              {
+              "driver": "Verstappen",
+              "qualifying": "19",
+              "race": "3"
+              },
+              {
+              "driver": "Grosjean",
+              "qualifying": "17",
+              "race": "11"
+              },
+              {
+              "driver": "Massa",
+              "qualifying": "6",
+              "race": "14"
+              },
+              {
+              "driver": "Sainz",
+              "qualifying": "11",
+              "race": "7"
+              },
+              {
+              "driver": "Kvyat",
+              "qualifying": "9",
+              "race": "0"
+              },
+              {
+              "driver": "Ricciardo",
+              "qualifying": "5",
+              "race": "4"
+              },
+              {
+              "driver": "Perez",
+              "qualifying": "8",
+              "race": "9"
+              },
+              {
+              "driver": "Hulkenberg",
+              "qualifying": "7",
+              "race": "12"
+              },
+              {
+              "driver": "Alonso",
+              "qualifying": "13",
+              "race": "0"
+              },
+              {
+              "driver": "Ocon",
+              "qualifying": "20",
+              "race": "10"
+              },
+              {
+              "driver": "Ericsson",
+              "qualifying": "14",
+              "race": "15"
+              },
+              {
+              "driver": "Wehrlein",
+              "qualifying": "15",
+              "race": "0"
+              },
+              {
+              "driver": "Magnussen",
+              "qualifying": "12",
+              "race": "8"
+              },
+              {
+              "driver": "Vandoorne",
+              "qualifying": "16",
+              "race": "0"
+              },
+              {
+              "driver": "Stroll",
+              "qualifying": "10",
+              "race": "0"
+              },
+              {
+              "driver": "Palmer",
+              "qualifying": "18",
+              "race": "13"
+              }
+              ]
   },
   {
-    "location": "Bahrain",
-    "results": [
-      {
-        "driver": "Hamilton",
-        "qualifying": "2",
-        "race": "2"
-      },
-      {
-        "driver": "Vettel",
-        "qualifying": "3",
-        "race": "1"
-      },
-      {
-        "driver": "Bottas",
-        "qualifying": "1",
-        "race": "3"
-      },
-      {
-        "driver": "Raikkonen",
-        "qualifying": "5",
-        "race": "4"
-      },
-      {
-        "driver": "Verstappen",
-        "qualifying": "6",
-        "race": "0"
-      },
-      {
-        "driver": "Grosjean",
-        "qualifying": "9",
-        "race": "8"
-      },
-      {
-        "driver": "Massa",
-        "qualifying": "8",
-        "race": "6"
-      },
-      {
-        "driver": "Sainz",
-        "qualifying": "16",
-        "race": "0"
-      },
-      {
-        "driver": "Kvyat",
-        "qualifying": "11",
-        "race": "12"
-      },
-      {
-        "driver": "Ricciardo",
-        "qualifying": "4",
-        "race": "5"
-      },
-      {
-        "driver": "Perez",
-        "qualifying": "18",
-        "race": "7"
-      },
-      {
-        "driver": "Hulkenberg",
-        "qualifying": "7",
-        "race": "9"
-      },
-      {
-        "driver": "Alonso",
-        "qualifying": "15",
-        "race": "14"
-      },
-      {
-        "driver": "Ocon",
-        "qualifying": "14",
-        "race": "10"
-      },
-      {
-        "driver": "Ericsson",
-        "qualifying": "19",
-        "race": "0"
-      },
-      {
-        "driver": "Wehrlein",
-        "qualifying": "13",
-        "race": "11"
-      },
-      {
-        "driver": "Magnussen",
-        "qualifying": "20",
-        "race": "0"
-      },
-      {
-        "driver": "Vandoorne",
-        "qualifying": "17",
-        "race": "0"
-      },
-      {
-        "driver": "Stroll",
-        "qualifying": "12",
-        "race": "0"
-      },
-      {
-        "driver": "Palmer",
-        "qualifying": "10",
-        "race": "13"
-      }
-    ]
+  "location": "Bahrain",
+  "results": [
+              {
+              "driver": "Hamilton",
+              "qualifying": "2",
+              "race": "2"
+              },
+              {
+              "driver": "Vettel",
+              "qualifying": "3",
+              "race": "1"
+              },
+              {
+              "driver": "Bottas",
+              "qualifying": "1",
+              "race": "3"
+              },
+              {
+              "driver": "Raikkonen",
+              "qualifying": "5",
+              "race": "4"
+              },
+              {
+              "driver": "Verstappen",
+              "qualifying": "6",
+              "race": "0"
+              },
+              {
+              "driver": "Grosjean",
+              "qualifying": "9",
+              "race": "8"
+              },
+              {
+              "driver": "Massa",
+              "qualifying": "8",
+              "race": "6"
+              },
+              {
+              "driver": "Sainz",
+              "qualifying": "16",
+              "race": "0"
+              },
+              {
+              "driver": "Kvyat",
+              "qualifying": "11",
+              "race": "12"
+              },
+              {
+              "driver": "Ricciardo",
+              "qualifying": "4",
+              "race": "5"
+              },
+              {
+              "driver": "Perez",
+              "qualifying": "18",
+              "race": "7"
+              },
+              {
+              "driver": "Hulkenberg",
+              "qualifying": "7",
+              "race": "9"
+              },
+              {
+              "driver": "Alonso",
+              "qualifying": "15",
+              "race": "14"
+              },
+              {
+              "driver": "Ocon",
+              "qualifying": "14",
+              "race": "10"
+              },
+              {
+              "driver": "Ericsson",
+              "qualifying": "19",
+              "race": "0"
+              },
+              {
+              "driver": "Wehrlein",
+              "qualifying": "13",
+              "race": "11"
+              },
+              {
+              "driver": "Magnussen",
+              "qualifying": "20",
+              "race": "0"
+              },
+              {
+              "driver": "Vandoorne",
+              "qualifying": "17",
+              "race": "0"
+              },
+              {
+              "driver": "Stroll",
+              "qualifying": "12",
+              "race": "0"
+              },
+              {
+              "driver": "Palmer",
+              "qualifying": "10",
+              "race": "13"
+              }
+              ]
   },
   {
-    "location": "Russia",
-    "results": [
-      {
-        "driver": "Hamilton",
-        "qualifying": "4",
-        "race": "4"
-      },
-      {
-        "driver": "Vettel",
-        "qualifying": "1",
-        "race": "2"
-      },
-      {
-        "driver": "Bottas",
-        "qualifying": "3",
-        "race": "1"
-      },
-      {
-        "driver": "Raikkonen",
-        "qualifying": "2",
-        "race": "3"
-      },
-      {
-        "driver": "Verstappen",
-        "qualifying": "7",
-        "race": "5"
-      },
-      {
-        "driver": "Grosjean",
-        "qualifying": "20",
-        "race": "0"
-      },
-      {
-        "driver": "Massa",
-        "qualifying": "6",
-        "race": "9"
-      },
-      {
-        "driver": "Sainz",
-        "qualifying": "11",
-        "race": "10"
-      },
-      {
-        "driver": "Kvyat",
-        "qualifying": "13",
-        "race": "12"
-      },
-      {
-        "driver": "Ricciardo",
-        "qualifying": "5",
-        "race": "0"
-      },
-      {
-        "driver": "Perez",
-        "qualifying": "9",
-        "race": "6"
-      },
-      {
-        "driver": "Hulkenberg",
-        "qualifying": "8",
-        "race": "8"
-      },
-      {
-        "driver": "Alonso",
-        "qualifying": "15",
-        "race": "0"
-      },
-      {
-        "driver": "Ocon",
-        "qualifying": "10",
-        "race": "7"
-      },
-      {
-        "driver": "Ericsson",
-        "qualifying": "19",
-        "race": "15"
-      },
-      {
-        "driver": "Wehrlein",
-        "qualifying": "18",
-        "race": "16"
-      },
-      {
-        "driver": "Magnussen",
-        "qualifying": "14",
-        "race": "13"
-      },
-      {
-        "driver": "Vandoorne",
-        "qualifying": "17",
-        "race": "14"
-      },
-      {
-        "driver": "Stroll",
-        "qualifying": "12",
-        "race": "11"
-      },
-      {
-        "driver": "Palmer",
-        "qualifying": "16",
-        "race": "0"
-      }
-    ]
+  "location": "Russia",
+  "results": [
+              {
+              "driver": "Hamilton",
+              "qualifying": "4",
+              "race": "4"
+              },
+              {
+              "driver": "Vettel",
+              "qualifying": "1",
+              "race": "2"
+              },
+              {
+              "driver": "Bottas",
+              "qualifying": "3",
+              "race": "1"
+              },
+              {
+              "driver": "Raikkonen",
+              "qualifying": "2",
+              "race": "3"
+              },
+              {
+              "driver": "Verstappen",
+              "qualifying": "7",
+              "race": "5"
+              },
+              {
+              "driver": "Grosjean",
+              "qualifying": "20",
+              "race": "0"
+              },
+              {
+              "driver": "Massa",
+              "qualifying": "6",
+              "race": "9"
+              },
+              {
+              "driver": "Sainz",
+              "qualifying": "11",
+              "race": "10"
+              },
+              {
+              "driver": "Kvyat",
+              "qualifying": "13",
+              "race": "12"
+              },
+              {
+              "driver": "Ricciardo",
+              "qualifying": "5",
+              "race": "0"
+              },
+              {
+              "driver": "Perez",
+              "qualifying": "9",
+              "race": "6"
+              },
+              {
+              "driver": "Hulkenberg",
+              "qualifying": "8",
+              "race": "8"
+              },
+              {
+              "driver": "Alonso",
+              "qualifying": "15",
+              "race": "0"
+              },
+              {
+              "driver": "Ocon",
+              "qualifying": "10",
+              "race": "7"
+              },
+              {
+              "driver": "Ericsson",
+              "qualifying": "19",
+              "race": "15"
+              },
+              {
+              "driver": "Wehrlein",
+              "qualifying": "18",
+              "race": "16"
+              },
+              {
+              "driver": "Magnussen",
+              "qualifying": "14",
+              "race": "13"
+              },
+              {
+              "driver": "Vandoorne",
+              "qualifying": "17",
+              "race": "14"
+              },
+              {
+              "driver": "Stroll",
+              "qualifying": "12",
+              "race": "11"
+              },
+              {
+              "driver": "Palmer",
+              "qualifying": "16",
+              "race": "0"
+              }
+              ]
   },
   {
-    "location": "Spain",
-    "results": [
-      {
-        "driver": "Hamilton",
-        "qualifying": "1",
-        "race": "1"
-      },
-      {
-        "driver": "Vettel",
-        "qualifying": "2",
-        "race": "2"
-      },
-      {
-        "driver": "Bottas",
-        "qualifying": "3",
-        "race": "0"
-      },
-      {
-        "driver": "Raikkonen",
-        "qualifying": "4",
-        "race": "0"
-      },
-      {
-        "driver": "Verstappen",
-        "qualifying": "5",
-        "race": "0"
-      },
-      {
-        "driver": "Grosjean",
-        "qualifying": "14",
-        "race": "10"
-      },
-      {
-        "driver": "Massa",
-        "qualifying": "9",
-        "race": "13"
-      },
-      {
-        "driver": "Sainz",
-        "qualifying": "12",
-        "race": "7"
-      },
-      {
-        "driver": "Kvyat",
-        "qualifying": "20",
-        "race": "9"
-      },
-      {
-        "driver": "Ricciardo",
-        "qualifying": "6",
-        "race": "3"
-      },
-      {
-        "driver": "Perez",
-        "qualifying": "8",
-        "race": "4"
-      },
-      {
-        "driver": "Hulkenberg",
-        "qualifying": "13",
-        "race": "6"
-      },
-      {
-        "driver": "Alonso",
-        "qualifying": "7",
-        "race": "12"
-      },
-      {
-        "driver": "Ocon",
-        "qualifying": "10",
-        "race": "5"
-      },
-      {
-        "driver": "Ericsson",
-        "qualifying": "16",
-        "race": "11"
-      },
-      {
-        "driver": "Wehrlein",
-        "qualifying": "15",
-        "race": "8"
-      },
-      {
-        "driver": "Magnussen",
-        "qualifying": "11",
-        "race": "14"
-      },
-      {
-        "driver": "Vandoorne",
-        "qualifying": "19",
-        "race": "0"
-      },
-      {
-        "driver": "Stroll",
-        "qualifying": "18",
-        "race": "16"
-      },
-      {
-        "driver": "Palmer",
-        "qualifying": "17",
-        "race": "15"
-      }
-    ]
+  "location": "Spain",
+  "results": [
+              {
+              "driver": "Hamilton",
+              "qualifying": "1",
+              "race": "1"
+              },
+              {
+              "driver": "Vettel",
+              "qualifying": "2",
+              "race": "2"
+              },
+              {
+              "driver": "Bottas",
+              "qualifying": "3",
+              "race": "0"
+              },
+              {
+              "driver": "Raikkonen",
+              "qualifying": "4",
+              "race": "0"
+              },
+              {
+              "driver": "Verstappen",
+              "qualifying": "5",
+              "race": "0"
+              },
+              {
+              "driver": "Grosjean",
+              "qualifying": "14",
+              "race": "10"
+              },
+              {
+              "driver": "Massa",
+              "qualifying": "9",
+              "race": "13"
+              },
+              {
+              "driver": "Sainz",
+              "qualifying": "12",
+              "race": "7"
+              },
+              {
+              "driver": "Kvyat",
+              "qualifying": "20",
+              "race": "9"
+              },
+              {
+              "driver": "Ricciardo",
+              "qualifying": "6",
+              "race": "3"
+              },
+              {
+              "driver": "Perez",
+              "qualifying": "8",
+              "race": "4"
+              },
+              {
+              "driver": "Hulkenberg",
+              "qualifying": "13",
+              "race": "6"
+              },
+              {
+              "driver": "Alonso",
+              "qualifying": "7",
+              "race": "12"
+              },
+              {
+              "driver": "Ocon",
+              "qualifying": "10",
+              "race": "5"
+              },
+              {
+              "driver": "Ericsson",
+              "qualifying": "16",
+              "race": "11"
+              },
+              {
+              "driver": "Wehrlein",
+              "qualifying": "15",
+              "race": "8"
+              },
+              {
+              "driver": "Magnussen",
+              "qualifying": "11",
+              "race": "14"
+              },
+              {
+              "driver": "Vandoorne",
+              "qualifying": "19",
+              "race": "0"
+              },
+              {
+              "driver": "Stroll",
+              "qualifying": "18",
+              "race": "16"
+              },
+              {
+              "driver": "Palmer",
+              "qualifying": "17",
+              "race": "15"
+              }
+              ]
   },
   {
-    "location": "Monaco",
-    "results": [
-      {
-        "driver": "Hamilton",
-        "qualifying": "13",
-        "race": "7"
-      },
-      {
-        "driver": "Vettel",
-        "qualifying": "2",
-        "race": "1"
-      },
-      {
-        "driver": "Bottas",
-        "qualifying": "3",
-        "race": "4"
-      },
-      {
-        "driver": "Raikkonen",
-        "qualifying": "1",
-        "race": "2"
-      },
-      {
-        "driver": "Verstappen",
-        "qualifying": "4",
-        "race": "5"
-      },
-      {
-        "driver": "Grosjean",
-        "qualifying": "8",
-        "race": "8"
-      },
-      {
-        "driver": "Massa",
-        "qualifying": "15",
-        "race": "9"
-      },
-      {
-        "driver": "Sainz",
-        "qualifying": "6",
-        "race": "6"
-      },
-      {
-        "driver": "Kvyat",
-        "qualifying": "9",
-        "race": "14"
-      },
-      {
-        "driver": "Ricciardo",
-        "qualifying": "5",
-        "race": "3"
-      },
-      {
-        "driver": "Perez",
-        "qualifying": "7",
-        "race": "13"
-      },
-      {
-        "driver": "Hulkenberg",
-        "qualifying": "10",
-        "race": "0"
-      },
-      {
-        "driver": "Alonso",
-        "qualifying": "20",
-        "race": "0"
-      },
-      {
-        "driver": "Ocon",
-        "qualifying": "15",
-        "race": "12"
-      },
-      {
-        "driver": "Ericsson",
-        "qualifying": "19",
-        "race": "0"
-      },
-      {
-        "driver": "Wehrlein",
-        "qualifying": "18",
-        "race": "0"
-      },
-      {
-        "driver": "Magnussen",
-        "qualifying": "11",
-        "race": "10"
-      },
-      {
-        "driver": "Vandoorne",
-        "qualifying": "12",
-        "race": "0"
-      },
-      {
-        "driver": "Stroll",
-        "qualifying": "18",
-        "race": "15"
-      },
-      {
-        "driver": "Palmer",
-        "qualifying": "16",
-        "race": "11"
-      }
-    ]
+  "location": "Monaco",
+  "results": [
+              {
+              "driver": "Hamilton",
+              "qualifying": "13",
+              "race": "7"
+              },
+              {
+              "driver": "Vettel",
+              "qualifying": "2",
+              "race": "1"
+              },
+              {
+              "driver": "Bottas",
+              "qualifying": "3",
+              "race": "4"
+              },
+              {
+              "driver": "Raikkonen",
+              "qualifying": "1",
+              "race": "2"
+              },
+              {
+              "driver": "Verstappen",
+              "qualifying": "4",
+              "race": "5"
+              },
+              {
+              "driver": "Grosjean",
+              "qualifying": "8",
+              "race": "8"
+              },
+              {
+              "driver": "Massa",
+              "qualifying": "15",
+              "race": "9"
+              },
+              {
+              "driver": "Sainz",
+              "qualifying": "6",
+              "race": "6"
+              },
+              {
+              "driver": "Kvyat",
+              "qualifying": "9",
+              "race": "14"
+              },
+              {
+              "driver": "Ricciardo",
+              "qualifying": "5",
+              "race": "3"
+              },
+              {
+              "driver": "Perez",
+              "qualifying": "7",
+              "race": "13"
+              },
+              {
+              "driver": "Hulkenberg",
+              "qualifying": "10",
+              "race": "0"
+              },
+              {
+              "driver": "Alonso",
+              "qualifying": "20",
+              "race": "0"
+              },
+              {
+              "driver": "Ocon",
+              "qualifying": "15",
+              "race": "12"
+              },
+              {
+              "driver": "Ericsson",
+              "qualifying": "19",
+              "race": "0"
+              },
+              {
+              "driver": "Wehrlein",
+              "qualifying": "18",
+              "race": "0"
+              },
+              {
+              "driver": "Magnussen",
+              "qualifying": "11",
+              "race": "10"
+              },
+              {
+              "driver": "Vandoorne",
+              "qualifying": "12",
+              "race": "0"
+              },
+              {
+              "driver": "Stroll",
+              "qualifying": "18",
+              "race": "15"
+              },
+              {
+              "driver": "Palmer",
+              "qualifying": "16",
+              "race": "11"
+              }
+              ]
   },
   {
-    "location": "Canada",
-    "results": [
-      {
-        "driver": "Hamilton",
-        "qualifying": "1",
-        "race": "1"
-      },
-      {
-        "driver": "Vettel",
-        "qualifying": "2",
-        "race": "4"
-      },
-      {
-        "driver": "Bottas",
-        "qualifying": "3",
-        "race": "2"
-      },
-      {
-        "driver": "Raikkonen",
-        "qualifying": "4",
-        "race": "7"
-      },
-      {
-        "driver": "Verstappen",
-        "qualifying": "5",
-        "race": "0"
-      },
-      {
-        "driver": "Grosjean",
-        "qualifying": "14",
-        "race": "10"
-      },
-      {
-        "driver": "Massa",
-        "qualifying": "7",
-        "race": "0"
-      },
-      {
-        "driver": "Sainz",
-        "qualifying": "13",
-        "race": "0"
-      },
-      {
-        "driver": "Kvyat",
-        "qualifying": "11",
-        "race": "0"
-      },
-      {
-        "driver": "Ricciardo",
-        "qualifying": "6",
-        "race": "3"
-      },
-      {
-        "driver": "Perez",
-        "qualifying": "8",
-        "race": "5"
-      },
-      {
-        "driver": "Hulkenberg",
-        "qualifying": "10",
-        "race": "8"
-      },
-      {
-        "driver": "Alonso",
-        "qualifying": "12",
-        "race": "16"
-      },
-      {
-        "driver": "Ocon",
-        "qualifying": "9",
-        "race": "6"
-      },
-      {
-        "driver": "Ericsson",
-        "qualifying": "19",
-        "race": "13"
-      },
-      {
-        "driver": "Wehrlein",
-        "qualifying": "20",
-        "race": "15"
-      },
-      {
-        "driver": "Magnussen",
-        "qualifying": "18",
-        "race": "12"
-      },
-      {
-        "driver": "Vandoorne",
-        "qualifying": "16",
-        "race": "14"
-      },
-      {
-        "driver": "Stroll",
-        "qualifying": "17",
-        "race": "9"
-      },
-      {
-        "driver": "Palmer",
-        "qualifying": "15",
-        "race": "11"
-      }
-    ]
+  "location": "Canada",
+  "results": [
+              {
+              "driver": "Hamilton",
+              "qualifying": "1",
+              "race": "1"
+              },
+              {
+              "driver": "Vettel",
+              "qualifying": "2",
+              "race": "4"
+              },
+              {
+              "driver": "Bottas",
+              "qualifying": "3",
+              "race": "2"
+              },
+              {
+              "driver": "Raikkonen",
+              "qualifying": "4",
+              "race": "7"
+              },
+              {
+              "driver": "Verstappen",
+              "qualifying": "5",
+              "race": "0"
+              },
+              {
+              "driver": "Grosjean",
+              "qualifying": "14",
+              "race": "10"
+              },
+              {
+              "driver": "Massa",
+              "qualifying": "7",
+              "race": "0"
+              },
+              {
+              "driver": "Sainz",
+              "qualifying": "13",
+              "race": "0"
+              },
+              {
+              "driver": "Kvyat",
+              "qualifying": "11",
+              "race": "0"
+              },
+              {
+              "driver": "Ricciardo",
+              "qualifying": "6",
+              "race": "3"
+              },
+              {
+              "driver": "Perez",
+              "qualifying": "8",
+              "race": "5"
+              },
+              {
+              "driver": "Hulkenberg",
+              "qualifying": "10",
+              "race": "8"
+              },
+              {
+              "driver": "Alonso",
+              "qualifying": "12",
+              "race": "16"
+              },
+              {
+              "driver": "Ocon",
+              "qualifying": "9",
+              "race": "6"
+              },
+              {
+              "driver": "Ericsson",
+              "qualifying": "19",
+              "race": "13"
+              },
+              {
+              "driver": "Wehrlein",
+              "qualifying": "20",
+              "race": "15"
+              },
+              {
+              "driver": "Magnussen",
+              "qualifying": "18",
+              "race": "12"
+              },
+              {
+              "driver": "Vandoorne",
+              "qualifying": "16",
+              "race": "14"
+              },
+              {
+              "driver": "Stroll",
+              "qualifying": "17",
+              "race": "9"
+              },
+              {
+              "driver": "Palmer",
+              "qualifying": "15",
+              "race": "11"
+              }
+              ]
   },
   {
-    "location": "Azerbaijan",
-    "results": [
-      {
-        "driver": "Hamilton",
-        "qualifying": "1",
-        "race": "5"
-      },
-      {
-        "driver": "Vettel",
-        "qualifying": "4",
-        "race": "4"
-      },
-      {
-        "driver": "Bottas",
-        "qualifying": "2",
-        "race": "2"
-      },
-      {
-        "driver": "Raikkonen",
-        "qualifying": "3",
-        "race": "14"
-      },
-      {
-        "driver": "Verstappen",
-        "qualifying": "5",
-        "race": "0"
-      },
-      {
-        "driver": "Grosjean",
-        "qualifying": "17",
-        "race": "13"
-      },
-      {
-        "driver": "Massa",
-        "qualifying": "9",
-        "race": "0"
-      },
-      {
-        "driver": "Sainz",
-        "qualifying": "12",
-        "race": "8"
-      },
-      {
-        "driver": "Kvyat",
-        "qualifying": "11",
-        "race": "0"
-      },
-      {
-        "driver": "Ricciardo",
-        "qualifying": "10",
-        "race": "1"
-      },
-      {
-        "driver": "Perez",
-        "qualifying": "6",
-        "race": "0"
-      },
-      {
-        "driver": "Hulkenberg",
-        "qualifying": "14",
-        "race": "0"
-      },
-      {
-        "driver": "Alonso",
-        "qualifying": "16",
-        "race": "9"
-      },
-      {
-        "driver": "Ocon",
-        "qualifying": "7",
-        "race": "6"
-      },
-      {
-        "driver": "Ericsson",
-        "qualifying": "18",
-        "race": "11"
-      },
-      {
-        "driver": "Wehrlein",
-        "qualifying": "15",
-        "race": "10"
-      },
-      {
-        "driver": "Magnussen",
-        "qualifying": "13",
-        "race": "7"
-      },
-      {
-        "driver": "Vandoorne",
-        "qualifying": "19",
-        "race": "12"
-      },
-      {
-        "driver": "Stroll",
-        "qualifying": "8",
-        "race": "3"
-      },
-      {
-        "driver": "Palmer",
-        "qualifying": "20",
-        "race": "0"
-      }
-    ]
+  "location": "Azerbaijan",
+  "results": [
+              {
+              "driver": "Hamilton",
+              "qualifying": "1",
+              "race": "5"
+              },
+              {
+              "driver": "Vettel",
+              "qualifying": "4",
+              "race": "4"
+              },
+              {
+              "driver": "Bottas",
+              "qualifying": "2",
+              "race": "2"
+              },
+              {
+              "driver": "Raikkonen",
+              "qualifying": "3",
+              "race": "14"
+              },
+              {
+              "driver": "Verstappen",
+              "qualifying": "5",
+              "race": "0"
+              },
+              {
+              "driver": "Grosjean",
+              "qualifying": "17",
+              "race": "13"
+              },
+              {
+              "driver": "Massa",
+              "qualifying": "9",
+              "race": "0"
+              },
+              {
+              "driver": "Sainz",
+              "qualifying": "12",
+              "race": "8"
+              },
+              {
+              "driver": "Kvyat",
+              "qualifying": "11",
+              "race": "0"
+              },
+              {
+              "driver": "Ricciardo",
+              "qualifying": "10",
+              "race": "1"
+              },
+              {
+              "driver": "Perez",
+              "qualifying": "6",
+              "race": "0"
+              },
+              {
+              "driver": "Hulkenberg",
+              "qualifying": "14",
+              "race": "0"
+              },
+              {
+              "driver": "Alonso",
+              "qualifying": "16",
+              "race": "9"
+              },
+              {
+              "driver": "Ocon",
+              "qualifying": "7",
+              "race": "6"
+              },
+              {
+              "driver": "Ericsson",
+              "qualifying": "18",
+              "race": "11"
+              },
+              {
+              "driver": "Wehrlein",
+              "qualifying": "15",
+              "race": "10"
+              },
+              {
+              "driver": "Magnussen",
+              "qualifying": "13",
+              "race": "7"
+              },
+              {
+              "driver": "Vandoorne",
+              "qualifying": "19",
+              "race": "12"
+              },
+              {
+              "driver": "Stroll",
+              "qualifying": "8",
+              "race": "3"
+              },
+              {
+              "driver": "Palmer",
+              "qualifying": "20",
+              "race": "0"
+              }
+              ]
   },
   {
-    "location": "Austria",
-    "results": [
-      {
-        "driver": "Hamilton",
-        "qualifying": "3",
-        "race": "4"
-      },
-      {
-        "driver": "Vettel",
-        "qualifying": "2",
-        "race": "2"
-      },
-      {
-        "driver": "Bottas",
-        "qualifying": "1",
-        "race": "1"
-      },
-      {
-        "driver": "Raikkonen",
-        "qualifying": "4",
-        "race": "5"
-      },
-      {
-        "driver": "Verstappen",
-        "qualifying": "6",
-        "race": "0"
-      },
-      {
-        "driver": "Grosjean",
-        "qualifying": "7",
-        "race": "6"
-      },
-      {
-        "driver": "Massa",
-        "qualifying": "17",
-        "race": "9"
-      },
-      {
-        "driver": "Sainz",
-        "qualifying": "10",
-        "race": "0"
-      },
-      {
-        "driver": "Kvyat",
-        "qualifying": "14",
-        "race": "16"
-      },
-      {
-        "driver": "Ricciardo",
-        "qualifying": "5",
-        "race": "3"
-      },
-      {
-        "driver": "Perez",
-        "qualifying": "8",
-        "race": "7"
-      },
-      {
-        "driver": "Hulkenberg",
-        "qualifying": "11",
-        "race": "13"
-      },
-      {
-        "driver": "Alonso",
-        "qualifying": "12",
-        "race": "0"
-      },
-      {
-        "driver": "Ocon",
-        "qualifying": "9",
-        "race": "8"
-      },
-      {
-        "driver": "Ericsson",
-        "qualifying": "19",
-        "race": "15"
-      },
-      {
-        "driver": "Wehrlein",
-        "qualifying": "20",
-        "race": "14"
-      },
-      {
-        "driver": "Magnussen",
-        "qualifying": "15",
-        "race": "0"
-      },
-      {
-        "driver": "Vandoorne",
-        "qualifying": "13",
-        "race": "12"
-      },
-      {
-        "driver": "Stroll",
-        "qualifying": "18",
-        "race": "10"
-      },
-      {
-        "driver": "Palmer",
-        "qualifying": "16",
-        "race": "11"
-      }
-    ]
+  "location": "Austria",
+  "results": [
+              {
+              "driver": "Hamilton",
+              "qualifying": "3",
+              "race": "4"
+              },
+              {
+              "driver": "Vettel",
+              "qualifying": "2",
+              "race": "2"
+              },
+              {
+              "driver": "Bottas",
+              "qualifying": "1",
+              "race": "1"
+              },
+              {
+              "driver": "Raikkonen",
+              "qualifying": "4",
+              "race": "5"
+              },
+              {
+              "driver": "Verstappen",
+              "qualifying": "6",
+              "race": "0"
+              },
+              {
+              "driver": "Grosjean",
+              "qualifying": "7",
+              "race": "6"
+              },
+              {
+              "driver": "Massa",
+              "qualifying": "17",
+              "race": "9"
+              },
+              {
+              "driver": "Sainz",
+              "qualifying": "10",
+              "race": "0"
+              },
+              {
+              "driver": "Kvyat",
+              "qualifying": "14",
+              "race": "16"
+              },
+              {
+              "driver": "Ricciardo",
+              "qualifying": "5",
+              "race": "3"
+              },
+              {
+              "driver": "Perez",
+              "qualifying": "8",
+              "race": "7"
+              },
+              {
+              "driver": "Hulkenberg",
+              "qualifying": "11",
+              "race": "13"
+              },
+              {
+              "driver": "Alonso",
+              "qualifying": "12",
+              "race": "0"
+              },
+              {
+              "driver": "Ocon",
+              "qualifying": "9",
+              "race": "8"
+              },
+              {
+              "driver": "Ericsson",
+              "qualifying": "19",
+              "race": "15"
+              },
+              {
+              "driver": "Wehrlein",
+              "qualifying": "20",
+              "race": "14"
+              },
+              {
+              "driver": "Magnussen",
+              "qualifying": "15",
+              "race": "0"
+              },
+              {
+              "driver": "Vandoorne",
+              "qualifying": "13",
+              "race": "12"
+              },
+              {
+              "driver": "Stroll",
+              "qualifying": "18",
+              "race": "10"
+              },
+              {
+              "driver": "Palmer",
+              "qualifying": "16",
+              "race": "11"
+              }
+              ]
   },
   {
-    "location": "Britain",
-    "results": [
-      {
-        "driver": "Hamilton",
-        "qualifying": "1",
-        "race": "1"
-      },
-      {
-        "driver": "Vettel",
-        "qualifying": "3",
-        "race": "7"
-      },
-      {
-        "driver": "Bottas",
-        "qualifying": "4",
-        "race": "2"
-      },
-      {
-        "driver": "Raikkonen",
-        "qualifying": "2",
-        "race": "3"
-      },
-      {
-        "driver": "Verstappen",
-        "qualifying": "5",
-        "race": "4"
-      },
-      {
-        "driver": "Grosjean",
-        "qualifying": "10",
-        "race": "13"
-      },
-      {
-        "driver": "Massa",
-        "qualifying": "15",
-        "race": "10"
-      },
-      {
-        "driver": "Sainz",
-        "qualifying": "14",
-        "race": "0"
-      },
-      {
-        "driver": "Kvyat",
-        "qualifying": "12",
-        "race": "15"
-      },
-      {
-        "driver": "Ricciardo",
-        "qualifying": "20",
-        "race": "5"
-      },
-      {
-        "driver": "Perez",
-        "qualifying": "7",
-        "race": "9"
-      },
-      {
-        "driver": "Hulkenberg",
-        "qualifying": "6",
-        "race": "6"
-      },
-      {
-        "driver": "Alonso",
-        "qualifying": "13",
-        "race": "0"
-      },
-      {
-        "driver": "Ocon",
-        "qualifying": "8",
-        "race": "8"
-      },
-      {
-        "driver": "Ericsson",
-        "qualifying": "19",
-        "race": "14"
-      },
-      {
-        "driver": "Wehrlein",
-        "qualifying": "18",
-        "race": "17"
-      },
-      {
-        "driver": "Magnussen",
-        "qualifying": "17",
-        "race": "12"
-      },
-      {
-        "driver": "Vandoorne",
-        "qualifying": "9",
-        "race": "11"
-      },
-      {
-        "driver": "Stroll",
-        "qualifying": "16",
-        "race": "16"
-      },
-      {
-        "driver": "Palmer",
-        "qualifying": "11",
-        "race": "0"
-      }
-    ]
+  "location": "Britain",
+  "results": [
+              {
+              "driver": "Hamilton",
+              "qualifying": "1",
+              "race": "1"
+              },
+              {
+              "driver": "Vettel",
+              "qualifying": "3",
+              "race": "7"
+              },
+              {
+              "driver": "Bottas",
+              "qualifying": "4",
+              "race": "2"
+              },
+              {
+              "driver": "Raikkonen",
+              "qualifying": "2",
+              "race": "3"
+              },
+              {
+              "driver": "Verstappen",
+              "qualifying": "5",
+              "race": "4"
+              },
+              {
+              "driver": "Grosjean",
+              "qualifying": "10",
+              "race": "13"
+              },
+              {
+              "driver": "Massa",
+              "qualifying": "15",
+              "race": "10"
+              },
+              {
+              "driver": "Sainz",
+              "qualifying": "14",
+              "race": "0"
+              },
+              {
+              "driver": "Kvyat",
+              "qualifying": "12",
+              "race": "15"
+              },
+              {
+              "driver": "Ricciardo",
+              "qualifying": "20",
+              "race": "5"
+              },
+              {
+              "driver": "Perez",
+              "qualifying": "7",
+              "race": "9"
+              },
+              {
+              "driver": "Hulkenberg",
+              "qualifying": "6",
+              "race": "6"
+              },
+              {
+              "driver": "Alonso",
+              "qualifying": "13",
+              "race": "0"
+              },
+              {
+              "driver": "Ocon",
+              "qualifying": "8",
+              "race": "8"
+              },
+              {
+              "driver": "Ericsson",
+              "qualifying": "19",
+              "race": "14"
+              },
+              {
+              "driver": "Wehrlein",
+              "qualifying": "18",
+              "race": "17"
+              },
+              {
+              "driver": "Magnussen",
+              "qualifying": "17",
+              "race": "12"
+              },
+              {
+              "driver": "Vandoorne",
+              "qualifying": "9",
+              "race": "11"
+              },
+              {
+              "driver": "Stroll",
+              "qualifying": "16",
+              "race": "16"
+              },
+              {
+              "driver": "Palmer",
+              "qualifying": "11",
+              "race": "0"
+              }
+              ]
   },
   {
-    "location": "Hungary",
-    "results": [
-      {
-        "driver": "Hamilton",
-        "qualifying": "4",
-        "race": "4"
-      },
-      {
-        "driver": "Vettel",
-        "qualifying": "1",
-        "race": "1"
-      },
-      {
-        "driver": "Bottas",
-        "qualifying": "3",
-        "race": "3"
-      },
-      {
-        "driver": "Raikkonen",
-        "qualifying": "2",
-        "race": "2"
-      },
-      {
-        "driver": "Verstappen",
-        "qualifying": "5",
-        "race": "5"
-      },
-      {
-        "driver": "Grosjean",
-        "qualifying": "15",
-        "race": "0"
-      },
-      {
-        "driver": "Massa",
-        "qualifying": "15",
-        "race": "0"
-      },
-      {
-        "driver": "Sainz",
-        "qualifying": "19",
-        "race": "7"
-      },
-      {
-        "driver": "Kvyat",
-        "qualifying": "13",
-        "race": "11"
-      },
-      {
-        "driver": "Ricciardo",
-        "qualifying": "6",
-        "race": "0"
-      },
-      {
-        "driver": "Perez",
-        "qualifying": "14",
-        "race": "8"
-      },
-      {
-        "driver": "Hulkenberg",
-        "qualifying": "7",
-        "race": "17"
-      },
-      {
-        "driver": "Alonso",
-        "qualifying": "8",
-        "race": "6"
-      },
-      {
-        "driver": "Ocon",
-        "qualifying": "12",
-        "race": "9"
-      },
-      {
-        "driver": "Ericsson",
-        "qualifying": "20",
-        "race": "16"
-      },
-      {
-        "driver": "Wehrlein",
-        "qualifying": "18",
-        "race": "15"
-      },
-      {
-        "driver": "Magnussen",
-        "qualifying": "16",
-        "race": "13"
-      },
-      {
-        "driver": "Vandoorne",
-        "qualifying": "9",
-        "race": "10"
-      },
-      {
-        "driver": "Stroll",
-        "qualifying": "17",
-        "race": "14"
-      },
-      {
-        "driver": "Palmer",
-        "qualifying": "11",
-        "race": "12"
-      }
-    ]
+  "location": "Hungary",
+  "results": [
+              {
+              "driver": "Hamilton",
+              "qualifying": "4",
+              "race": "4"
+              },
+              {
+              "driver": "Vettel",
+              "qualifying": "1",
+              "race": "1"
+              },
+              {
+              "driver": "Bottas",
+              "qualifying": "3",
+              "race": "3"
+              },
+              {
+              "driver": "Raikkonen",
+              "qualifying": "2",
+              "race": "2"
+              },
+              {
+              "driver": "Verstappen",
+              "qualifying": "5",
+              "race": "5"
+              },
+              {
+              "driver": "Grosjean",
+              "qualifying": "15",
+              "race": "0"
+              },
+              {
+              "driver": "Massa",
+              "qualifying": "15",
+              "race": "0"
+              },
+              {
+              "driver": "Sainz",
+              "qualifying": "19",
+              "race": "7"
+              },
+              {
+              "driver": "Kvyat",
+              "qualifying": "13",
+              "race": "11"
+              },
+              {
+              "driver": "Ricciardo",
+              "qualifying": "6",
+              "race": "0"
+              },
+              {
+              "driver": "Perez",
+              "qualifying": "14",
+              "race": "8"
+              },
+              {
+              "driver": "Hulkenberg",
+              "qualifying": "7",
+              "race": "17"
+              },
+              {
+              "driver": "Alonso",
+              "qualifying": "8",
+              "race": "6"
+              },
+              {
+              "driver": "Ocon",
+              "qualifying": "12",
+              "race": "9"
+              },
+              {
+              "driver": "Ericsson",
+              "qualifying": "20",
+              "race": "16"
+              },
+              {
+              "driver": "Wehrlein",
+              "qualifying": "18",
+              "race": "15"
+              },
+              {
+              "driver": "Magnussen",
+              "qualifying": "16",
+              "race": "13"
+              },
+              {
+              "driver": "Vandoorne",
+              "qualifying": "9",
+              "race": "10"
+              },
+              {
+              "driver": "Stroll",
+              "qualifying": "17",
+              "race": "14"
+              },
+              {
+              "driver": "Palmer",
+              "qualifying": "11",
+              "race": "12"
+              }
+              ]
   },
   {
-    "location": "Belgium",
-    "results": [
-      {
-        "driver": "Hamilton",
-        "qualifying": "1",
-        "race": "1"
-      },
-      {
-        "driver": "Vettel",
-        "qualifying": "2",
-        "race": "2"
-      },
-      {
-        "driver": "Bottas",
-        "qualifying": "3",
-        "race": "5"
-      },
-      {
-        "driver": "Raikkonen",
-        "qualifying": "4",
-        "race": "4"
-      },
-      {
-        "driver": "Verstappen",
-        "qualifying": "5",
-        "race": "0"
-      },
-      {
-        "driver": "Grosjean",
-        "qualifying": "12",
-        "race": "7"
-      },
-      {
-        "driver": "Massa",
-        "qualifying": "16",
-        "race": "8"
-      },
-      {
-        "driver": "Sainz",
-        "qualifying": "14",
-        "race": "10"
-      },
-      {
-        "driver": "Kvyat",
-        "qualifying": "17",
-        "race": "12"
-      },
-      {
-        "driver": "Ricciardo",
-        "qualifying": "6",
-        "race": "3"
-      },
-      {
-        "driver": "Perez",
-        "qualifying": "8",
-        "race": "17"
-      },
-      {
-        "driver": "Hulkenberg",
-        "qualifying": "7",
-        "race": "6"
-      },
-      {
-        "driver": "Alonso",
-        "qualifying": "11",
-        "race": "0"
-      },
-      {
-        "driver": "Ocon",
-        "qualifying": "9",
-        "race": "9"
-      },
-      {
-        "driver": "Ericsson",
-        "qualifying": "19",
-        "race": "16"
-      },
-      {
-        "driver": "Wehrlein",
-        "qualifying": "20",
-        "race": "0"
-      },
-      {
-        "driver": "Magnussen",
-        "qualifying": "13",
-        "race": "15"
-      },
-      {
-        "driver": "Vandoorne",
-        "qualifying": "15",
-        "race": "14"
-      },
-      {
-        "driver": "Stroll",
-        "qualifying": "18",
-        "race": "11"
-      },
-      {
-        "driver": "Palmer",
-        "qualifying": "10",
-        "race": "13"
-      }
-    ]
+  "location": "Belgium",
+  "results": [
+              {
+              "driver": "Hamilton",
+              "qualifying": "1",
+              "race": "1"
+              },
+              {
+              "driver": "Vettel",
+              "qualifying": "2",
+              "race": "2"
+              },
+              {
+              "driver": "Bottas",
+              "qualifying": "3",
+              "race": "5"
+              },
+              {
+              "driver": "Raikkonen",
+              "qualifying": "4",
+              "race": "4"
+              },
+              {
+              "driver": "Verstappen",
+              "qualifying": "5",
+              "race": "0"
+              },
+              {
+              "driver": "Grosjean",
+              "qualifying": "12",
+              "race": "7"
+              },
+              {
+              "driver": "Massa",
+              "qualifying": "16",
+              "race": "8"
+              },
+              {
+              "driver": "Sainz",
+              "qualifying": "14",
+              "race": "10"
+              },
+              {
+              "driver": "Kvyat",
+              "qualifying": "17",
+              "race": "12"
+              },
+              {
+              "driver": "Ricciardo",
+              "qualifying": "6",
+              "race": "3"
+              },
+              {
+              "driver": "Perez",
+              "qualifying": "8",
+              "race": "17"
+              },
+              {
+              "driver": "Hulkenberg",
+              "qualifying": "7",
+              "race": "6"
+              },
+              {
+              "driver": "Alonso",
+              "qualifying": "11",
+              "race": "0"
+              },
+              {
+              "driver": "Ocon",
+              "qualifying": "9",
+              "race": "9"
+              },
+              {
+              "driver": "Ericsson",
+              "qualifying": "19",
+              "race": "16"
+              },
+              {
+              "driver": "Wehrlein",
+              "qualifying": "20",
+              "race": "0"
+              },
+              {
+              "driver": "Magnussen",
+              "qualifying": "13",
+              "race": "15"
+              },
+              {
+              "driver": "Vandoorne",
+              "qualifying": "15",
+              "race": "14"
+              },
+              {
+              "driver": "Stroll",
+              "qualifying": "18",
+              "race": "11"
+              },
+              {
+              "driver": "Palmer",
+              "qualifying": "10",
+              "race": "13"
+              }
+              ]
+  },
+  {
+  "location": "Italy",
+  "results": [
+              {
+              "driver": "Hamilton",
+              "qualifying": "1",
+              "race": "1"
+              },
+              {
+              "driver": "Vettel",
+              "qualifying": "8",
+              "race": "3"
+              },
+              {
+              "driver": "Bottas",
+              "qualifying": "6",
+              "race": "2"
+              },
+              {
+              "driver": "Raikkonen",
+              "qualifying": "7",
+              "race": "5"
+              },
+              {
+              "driver": "Verstappen",
+              "qualifying": "2",
+              "race": "10"
+              },
+              {
+              "driver": "Grosjean",
+              "qualifying": "0",
+              "race": "15"
+              },
+              {
+              "driver": "Massa",
+              "qualifying": "9",
+              "race": "8"
+              },
+              {
+              "driver": "Sainz",
+              "qualifying": "15",
+              "race": "14"
+              },
+              {
+              "driver": "Kvyat",
+              "qualifying": "14",
+              "race": "12"
+              },
+              {
+              "driver": "Ricciardo",
+              "qualifying": "3",
+              "race": "4"
+              },
+              {
+              "driver": "Perez",
+              "qualifying": "11",
+              "race": "9"
+              },
+              {
+              "driver": "Hulkenberg",
+              "qualifying": "12",
+              "race": "13"
+              },
+              {
+              "driver": "Alonso",
+              "qualifying": "13",
+              "race": "17"
+              },
+              {
+              "driver": "Ocon",
+              "qualifying": "5",
+              "race": "6"
+              },
+              {
+              "driver": "Ericsson",
+              "qualifying": "18",
+              "race": "18"
+              },
+              {
+              "driver": "Wehrlein",
+              "qualifying": "19",
+              "race": "16"
+              },
+              {
+              "driver": "Magnussen",
+              "qualifying": "16",
+              "race": "11"
+              },
+              {
+              "driver": "Vandoorne",
+              "qualifying": "10",
+              "race": "0"
+              },
+              {
+              "driver": "Stroll",
+              "qualifying": "4",
+              "race": "7"
+              },
+              {
+              "driver": "Palmer",
+              "qualifying": "17",
+              "race": "0"
+              }
+              ]
+  },
+  {
+  "location": "Singapore",
+  "results": [
+              {
+              "driver": "Hamilton",
+              "qualifying": "5",
+              "race": "1"
+              },
+              {
+              "driver": "Vettel",
+              "qualifying": "1",
+              "race": "0"
+              },
+              {
+              "driver": "Bottas",
+              "qualifying": "6",
+              "race": "3"
+              },
+              {
+              "driver": "Raikkonen",
+              "qualifying": "4",
+              "race": "0"
+              },
+              {
+              "driver": "Verstappen",
+              "qualifying": "2",
+              "race": "0"
+              },
+              {
+              "driver": "Grosjean",
+              "qualifying": "15",
+              "race": "9"
+              },
+              {
+              "driver": "Massa",
+              "qualifying": "17",
+              "race": "11"
+              },
+              {
+              "driver": "Sainz",
+              "qualifying": "10",
+              "race": "4"
+              },
+              {
+              "driver": "Kvyat",
+              "qualifying": "13",
+              "race": "0"
+              },
+              {
+              "driver": "Ricciardo",
+              "qualifying": "3",
+              "race": "2"
+              },
+              {
+              "driver": "Perez",
+              "qualifying": "12",
+              "race": "5"
+              },
+              {
+              "driver": "Hulkenberg",
+              "qualifying": "7",
+              "race": "0"
+              },
+              {
+              "driver": "Alonso",
+              "qualifying": "14",
+              "race": "0"
+              },
+              {
+              "driver": "Ocon",
+              "qualifying": "14",
+              "race": "10"
+              },
+              {
+              "driver": "Ericsson",
+              "qualifying": "20",
+              "race": "0"
+              },
+              {
+              "driver": "Wehrlein",
+              "qualifying": "19",
+              "race": "12"
+              },
+              {
+              "driver": "Magnussen",
+              "qualifying": "16",
+              "race": "0"
+              },
+              {
+              "driver": "Vandoorne",
+              "qualifying": "9",
+              "race": "7"
+              },
+              {
+              "driver": "Stroll",
+              "qualifying": "18",
+              "race": "8"
+              },
+              {
+              "driver": "Palmer",
+              "qualifying": "11",
+              "race": "6"
+              }
+              ]
+  },
+  {
+  "location": "Malaysia",
+  "results": [
+              {
+              "driver": "Hamilton",
+              "qualifying": "1",
+              "race": "2"
+              },
+              {
+              "driver": "Vettel",
+              "qualifying": "0",
+              "race": "4"
+              },
+              {
+              "driver": "Bottas",
+              "qualifying": "5",
+              "race": "5"
+              },
+              {
+              "driver": "Raikkonen",
+              "qualifying": "2",
+              "race": "0"
+              },
+              {
+              "driver": "Verstappen",
+              "qualifying": "3",
+              "race": "1"
+              },
+              {
+              "driver": "Grosjean",
+              "qualifying": "8",
+              "race": "13"
+              },
+              {
+              "driver": "Massa",
+              "qualifying": "11",
+              "race": "9"
+              },
+              {
+              "driver": "Sainz",
+              "qualifying": "14",
+              "race": "0"
+              },
+              {
+              "driver": "Kvyat",
+              "qualifying": "15",
+              "race": "14"
+              },
+              {
+              "driver": "Ricciardo",
+              "qualifying": "4",
+              "race": "3"
+              },
+              {
+              "driver": "Perez",
+              "qualifying": "9",
+              "race": "6"
+              },
+              {
+              "driver": "Hulkenberg",
+              "qualifying": "8",
+              "race": "16"
+              },
+              {
+              "driver": "Alonso",
+              "qualifying": "10",
+              "race": "11"
+              },
+              {
+              "driver": "Ocon",
+              "qualifying": "6",
+              "race": "10"
+              },
+              {
+              "driver": "Ericsson",
+              "qualifying": "19",
+              "race": "18"
+              },
+              {
+              "driver": "Wehrlein",
+              "qualifying": "18",
+              "race": "17"
+              },
+              {
+              "driver": "Magnussen",
+              "qualifying": "17",
+              "race": "12"
+              },
+              {
+              "driver": "Vandoorne",
+              "qualifying": "7",
+              "race": "7"
+              },
+              {
+              "driver": "Stroll",
+              "qualifying": "13",
+              "race": "8"
+              },
+              {
+              "driver": "Palmer",
+              "qualifying": "12",
+              "race": "15"
+              }
+              ]
+  },
+  {
+  "location": "Japan",
+  "results": [
+              {
+              "driver": "Hamilton",
+              "qualifying": "1",
+              "race": "1"
+              },
+              {
+              "driver": "Vettel",
+              "qualifying": "3",
+              "race": "0"
+              },
+              {
+              "driver": "Bottas",
+              "qualifying": "2",
+              "race": "4"
+              },
+              {
+              "driver": "Raikkonen",
+              "qualifying": "6",
+              "race": "5"
+              },
+              {
+              "driver": "Verstappen",
+              "qualifying": "5",
+              "race": "2"
+              },
+              {
+              "driver": "Grosjean",
+              "qualifying": "16",
+              "race": "9"
+              },
+              {
+              "driver": "Massa",
+              "qualifying": "9",
+              "race": "10"
+              },
+              {
+              "driver": "Sainz",
+              "qualifying": "15",
+              "race": "0"
+              },
+              {
+              "driver": "Kvyat",
+              "qualifying": "17",
+              "race": "13"
+              },
+              {
+              "driver": "Ricciardo",
+              "qualifying": "4",
+              "race": "3"
+              },
+              {
+              "driver": "Perez",
+              "qualifying": "8",
+              "race": "7"
+              },
+              {
+              "driver": "Hulkenberg",
+              "qualifying": "12",
+              "race": "0"
+              },
+              {
+              "driver": "Alonso",
+              "qualifying": "10",
+              "race": "11"
+              },
+              {
+              "driver": "Ocon",
+              "qualifying": "7",
+              "race": "6"
+              },
+              {
+              "driver": "Ericsson",
+              "qualifying": "19",
+              "race": "0"
+              },
+              {
+              "driver": "Wehrlein",
+              "qualifying": "20",
+              "race": "15"
+              },
+              {
+              "driver": "Magnussen",
+              "qualifying": "13",
+              "race": "8"
+              },
+              {
+              "driver": "Vandoorne",
+              "qualifying": "11",
+              "race": "14"
+              },
+              {
+              "driver": "Stroll",
+              "qualifying": "18",
+              "race": "0"
+              },
+              {
+              "driver": "Palmer",
+              "qualifying": "14",
+              "race": "12"
+              }
+              ]
   }
-]
+  ]
